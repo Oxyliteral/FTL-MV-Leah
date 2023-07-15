@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--------------------------------SHIPS----------------------------------->
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMA" layout="newtonbeam" img="newtonbeam_base">
+	<class>Leah's Original Cruiser</class>
+	<name>The Beam Master</name>
+	<desc>The ship of the Infamous Beam Master, better known as Leo... or, wait was it Liam? Leviticus? Lizzy???</desc>
+	<systemList>
+		<battery power="1" max="2" room="12" start="false" img="room_battery_3" />
+		<cloaking power="1" room="1" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="6" start="false" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="10" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="9" start="false" img="room_drones" />
+		<engines power="2" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="true" img="room_hacking_5" />
+		<medbay power="1" room="6" start="true" img="USE">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="13" start="false" img="room_mind_3" />
+		<oxygen power="1" room="3" start="true" img="room_oxygen" />
+		<pilot power="1" room="4" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="0" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="false" />
+		<weapons power="2" max="8" room="7" start="true" img="room_weapons_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="3" count="4">
+		<weapon name="BEAM_PIERCE" />
+	</weaponList>
+	<droneList drones="10" count="2">
+		<drone name="REPAIR_BOARDER" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="8" />
+	<aug name="LEAH_VENGEANCE" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMA_2" layout="newtonbeam_2" img="newtonbeam_2">
+	<class>Leah's Original Cruiser</class>
+	<name>The Rulebook</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMA_2_unlock"/>
+	<desc>With a permenant mind control rig installed on the Beam Master's ship, her ship was quickly painted in federation colours and turned into a multiverse capable ship</desc>
+	<systemList>
+		<artillery power="1" max="5" room="3" start="true" weapon="BIO_1_LEAH" img="room_artillery_3" />
+		<battery power="1" max="2" room="10" start="false" img="room_battery_14" />
+		<cloaking power="1" max="5" room="2" start="false" img="room_cloaking_9" />
+		<clonebay power="1" max="4" room="14" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="7" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="4" start="false" img="room_drones_15" />
+		<engines power="2" max="8" room="5" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="3" room="11" start="false" img="room_hacking_2" />
+		<medbay power="1" max="4" room="14" start="false" img="room_medbay">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<mind power="1" max="3" room="9" start="true" img="room_mind_11" />
+		<oxygen power="1" max="4" room="13" start="true" img="room_oxygen_12" />
+		<pilot power="1" max="3" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="3" room="6" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="8" start="true" img="room_shields_4">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="2" max="4" room="1" start="true" />
+		<weapons power="2" max="8" room="12" start="false" img="room_weapons_11">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2" />
+	<droneList drones="3" count="4" />
+	<health amount="30" />
+	<maxPower amount="5" />
+	<aug name="LEAH_VENGEANCE" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMA_3" layout="newtonbeam_3" img="newtonbeam_3">
+	<class>Leah's Original Cruiser</class>
+	<name>The Semi-Competent</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMA_3_unlock"/>
+	<desc>After careful thought, Leah realized her old ship wasn't ready for the challenges of the multiverse. However, in her haste to upgrade her ship, she forgot to make it compatible with shields. Oops.</desc>
+	<systemList>
+		<battery power="1" room="12" start="false" img="room_battery_2" />
+		<cloaking power="2" room="1" start="true" img="room_cloaking_10" />
+		<clonebay power="1" room="3" start="false" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="6" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" room="10" start="false" img="room_drones_15" />
+		<engines power="3" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="false" img="room_hacking_3" />
+		<medbay power="1" room="3" start="true" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="false" img="room_mind_3" />
+		<oxygen power="1" room="11" start="true" img="room_oxygen_6" />
+		<pilot power="1" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="2" start="false" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<teleporter power="1" room="4" start="false" />
+		<weapons power="3" room="8" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="3" count="3">
+		<weapon name="BEAM_1" />
+		<weapon name="BEAM_MINING" />
+	</weaponList>
+	<droneList drones="3" count="3" />
+	<health amount="30" />
+	<maxPower amount="9" />
+	<aug name="LEAH_VENGEANCE" />
+</shipBlueprint>
+
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMB" layout="newtonbeam_2" img="newtonbeam_2">
+	<class>Leah's Cruiser</class>
+	<name>The Laser Master</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMB_unlock"/>
+	<desc>The ship of the infamous Laser Master. Leo had to sell all their ammunition and drones for this. Who needs them when you have lasers anyway, right, Liam? At least Leviticus kept the Weapons Control this time. Unfortunately, Lizzy forgot about her ship hull and reactor. Woops.</desc>
+	<systemList>
+		<artillery power="1" max="4" room="3" start="true" weapon="ANCIENT_LASER_3_ARTILLERY_LEAH" img="room_artillery_3" />
+		<battery power="1" max="2" room="10" start="false" img="room_battery_14" />
+		<cloaking power="1" max="5" room="2" start="false" img="room_cloaking_9" />
+		<clonebay power="1" max="4" room="14" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="7" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="6" room="4" start="false" img="room_drones_15" />
+		<engines power="2" max="5" room="5" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="3" room="11" start="false" img="room_hacking_2" />
+		<medbay power="1" max="4" room="14" start="true" img="room_medbay">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<mind power="1" max="3" room="8" start="false" img="room_mind_11" />
+		<oxygen power="1" max="4" room="13" start="true" img="room_oxygen_12" />
+		<pilot power="1" max="3" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="3" room="6" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="9" start="true" img="room_shields_4">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="4" room="1" start="false" />
+		<weapons power="5" max="8" room="12" start="true" img="room_weapons_11">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="LASER_LIGHT_2" />
+		<weapon name="LASER_LIGHT_2" />
+		<weapon name="LASER_LIGHT_2" />
+		<weapon name="LASER_LIGHT_2" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="15" />
+	<maxPower amount="8" />
+	<aug name="LOCKED_LEAH_PREIGNITER" />
+	<aug name="LOCKED_LEAH_PREIGNITER" />
+	<aug name="LOCKED_LEAH_PREIGNITER" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMB_2" layout="newtonbeam_divided" img="newtonbeam_divided">
+	<class>Leah's Cruiser</class>
+	<name>The Divided</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMB_2_unlock"/>
+	<desc>Leo, Liam, Leviticus, and Lizzy had always worked under the moniker 'The Beam Master'.</desc>
+	<systemList>
+		<artillery power="1" max="4" room="13" start="true" weapon="BEAM_1_ARTILLERY_LEAH" img="room_artillery_3_leah" />
+		<artillery power="1" max="4" room="14" start="true" weapon="BEAM_1_ARTILLERY_LEAH" img="room_artillery_3_leah" />
+		<artillery power="1" max="4" room="23" start="true" weapon="BEAM_1_ARTILLERY_LEAH" />
+		<artillery power="1" max="4" room="24" start="true" weapon="BEAM_1_ARTILLERY_LEAH" />
+		<battery power="1" room="19" start="false" img="room_battery_leah" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking_orchid_2" />
+		<clonebay power="1" max="2" room="2" start="false" >
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="0" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" max="3" room="7" start="true" img="room_drones_orchid_3" />
+		<engines power="2" room="1" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="true" img="room_hacking_2" />
+		<medbay power="1" room="2" start="false" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="18" start="false" img="room_mind_3" />
+		<oxygen power="1" room="20" start="true" img="room_oxygen_orchid_leah" />
+		<pilot power="1" room="4" start="true" img="room_pilot_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="6" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="12" start="true" img="room_shields_alpha_leah">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons power="2" max="8" room="15" start="true" img="room_weapons_12_leah">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="5" count="4">
+		<weapon name="SHOTGUN_INSTANT_LEAH" />
+		<weapon name="SHOTGUN_INSTANT_LEAH" />
+		<weapon name="SHOTGUN_INSTANT_LEAH" />
+		<weapon name="SHOTGUN_INSTANT_LEAH" />
+	</weaponList>
+	<droneList drones="6" count="1">
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="25" />
+	<maxPower amount="9" />
+	<aug name="LOCKED_LEAH_DIVIDED" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMB_3" layout="newtonbeam_her" img="newtonbeam_her">
+	<class>Leah's Cruiser</class>
+	<name>Her</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMB_3_unlock"/>
+	<desc>After careful thought, Leah realized her old ship wasn't ready for the challenges of the multiverse. So she teamed up with Her. Oh god, now there are two of them. Along with a flurry of systems, this ship is a formidable foe to any who dare engage it.</desc>
+	<systemList>
+		<temporal power="1" max="2" room="8" start="true" img="room_temporal_3" />
+		<artillery power="1" max="4" room="13" start="true" weapon="BOMB_BUFF_ARTILLERY_LEAH" img="room_artillery_4" />
+		<battery power="1" max="2" room="12" start="true" img="room_battery_3" />
+		<cloaking power="1" max="2" room="1" start="true" img="room_cloaking_9" />
+		<clonebay power="1" max="2" room="6" start="true" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" max="2" room="10" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="6" room="9" start="true" img="room_drones" />
+		<engines power="1" max="4" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="2" room="15" start="true" img="room_hacking_3" />
+		<medbay power="1" max="2" room="6" start="false" img="USE">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" max="2" room="14" start="true" img="room_mind_3" />
+		<oxygen power="1" max="2" room="3" start="true" img="room_oxygen" />
+		<pilot power="1" max="2" room="4" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="2" room="11" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" max="6" room="0" start="true" img="room_shields_leah">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="2" start="true" />
+		<weapons power="1" max="6" room="7" start="true" img="room_weapons_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="1" count="3">
+		<weapon name="BIG_ION" />
+		<weapon name="LOOT_MATH_5" />
+		<weapon name="LASER_LIGHT" />
+	</weaponList>
+	<droneList drones="1" count="1" />
+	<health amount="25" />
+	<maxPower amount="10" />
+	<aug name="LEAH_VENGEANCE_BIG" />
+</shipBlueprint>
+
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMC" layout="newtonbeam_3" img="newtonbeam_3">
+	<class>Leah's Advanced Cruiser</class>
+	<name>The Whole</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMC_unlock"/>
+	<desc>"Dude, I got all my friends ready to kick your ass, beyatch!" It seems Leah spent most of her budget on her ship's systems and crew. By most, we mean all.</desc>
+	<systemList>
+		<battery power="1" room="12" start="false" img="room_battery_2" />
+		<cloaking power="1" max="2" room="7" start="false" img="room_cloaking_orchid_2" />
+		<clonebay power="1" room="3" start="false" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="6" start="false" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" room="10" start="false" img="room_drones_15" />
+		<engines power="3" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="false" img="room_hacking_3" />
+		<medbay power="3" room="3" start="true" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="false" img="room_mind_3" />
+		<oxygen power="3" room="11" start="true" img="room_oxygen_6" />
+		<pilot power="3" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="3" room="2" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="3" max="6" room="1" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="3" room="4" start="true" />
+		<weapons power="3" max="8" room="8" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="10" count="2">
+		<weapon name="MINELAUNCHER_1_LEAH" />
+	</weaponList>
+	<droneList drones="0" count="3" />
+	<health amount="20" />
+	<maxPower amount="0" />
+	<aug name="COMBAT_WEAPON_JAMMER" />
+	<aug name="EXTRA_PREP" />
+	<aug name="COMBAT_PANIC_BUTTON" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMC_2" layout="newtonbeam" img="newtonbeam_base">
+	<class>Leah's Advanced Cruiser</class>
+	<name>The Post-Igniter</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMC_2_unlock"/>
+	<desc>Leah somehow got her hands on THE BEAMEST BEAM EVER CONCEIVED. Unfortunately, it's her only offensive weapon.</desc>
+	<systemList>
+		<battery power="1" max="2" room="12" start="false" img="room_battery_3" />
+		<cloaking power="1" room="1" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="6" start="true" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="10" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="9" start="true" img="room_drones" />
+		<engines power="1" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="false" img="room_hacking_5" />
+		<medbay power="1" room="6" start="false" img="USE">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="13" start="true" img="room_mind_3" />
+		<oxygen power="1" room="3" start="true" img="room_oxygen" />
+		<pilot power="2" room="4" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" max="6" room="0" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="false" />
+		<weapons power="8" max="8" room="7" start="true" img="room_weapons_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>1</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="1">
+		<weapon name="PACKAGE_LEAH_THE_BIG_ONE" />
+	</weaponList>
+	<droneList drones="10" count="2">
+		<drone name="GUARDIAN_1_DRONE" />
+		<drone name="DEFENSE_1" />
+	</droneList>
+	<health amount="20" />
+	<maxPower amount="10" />
+	<aug name="EX_AUTO_COOLDOWN" />
+	<aug name="EX_AUTO_COOLDOWN" />
+	<aug name="EX_AUTO_COOLDOWN" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMC_3" layout="newtonbeam_2" img="newtonbeam_2">
+	<class>Leah's Advanced Cruiser</class>
+	<name>The Beam Master</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMC_3_unlock"/>
+	<desc>Leah somehow installed THE BEAMEST BEAM EVER CONCEIVED into her ship's artillery. The Rebellion, along with every other ship owner, will regret ever having messed with you.</desc>
+	<systemList>
+		<artillery power="1" max="5" room="3" start="true" weapon="PACKAGE_LEAH_THE_BIG_ONE_ARTILLERY" img="room_artillery_3" />
+		<battery power="1" max="2" room="10" start="false" img="room_battery_14" />
+		<cloaking power="1" max="2" room="2" start="false" img="room_cloaking_9" />
+		<clonebay power="1" max="4" room="14" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="7" start="false" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="4" start="false" img="room_drones_15" />
+		<engines power="1" max="8" room="5" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="3" room="11" start="false" img="room_hacking_2" />
+		<medbay power="1" max="4" room="14" start="true" img="room_medbay">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<mind power="1" max="3" room="9" start="false" img="room_mind_11" />
+		<oxygen power="1" max="4" room="13" start="true" img="room_oxygen_12" />
+		<pilot power="1" max="3" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="3" room="6" start="false" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="8" start="true" img="room_shields_4">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="2" max="4" room="1" start="false" />
+		<weapons power="2" max="8" room="12" start="true" img="room_weapons_11">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="3">
+		<weapon name="ENERGY_2" />
+		<weapon name="ENERGY_1" />
+	</weaponList>
+	<droneList drones="0" count="3" />
+	<health amount="20" />
+	<maxPower amount="6" />
+	<aug name="LOCKED_XENOPHOBIA" />
+	<aug name="FLEET_LURE" />
+	<aug name="MVBOSS_SPAWNER" />
+</shipBlueprint>
+
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMD" layout="newtonbeam_4" img="newtonbeam_4">
+	<class>Leah's Abandoned Cruiser</class>
+	<name>The UnRespectable</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMD_unlock"/>
+	<desc>After a prank gone wrong, Leah refuses to touch this ship. Fortunately, she's given it to the Federation for use. ...Er, are you sure this is fortunate...?</desc>
+	<systemList>
+		<battery power="2" room="12" start="true" img="room_battery_2" />
+		<cloaking power="1" max="2" room="1" start="false" img="room_cloaking_10" />
+		<clonebay power="1" room="3" start="false" >
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="6" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="6" room="10" start="true" img="room_drones_15" />
+		<engines power="2" room="5" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="false" img="room_hacking_3" />
+		<medbay power="2" room="3" start="true" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="false" img="room_mind_3" />
+		<oxygen power="2" room="11" start="true" img="room_oxygen_6" />
+		<pilot power="1" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="2" start="false" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="6" room="7" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="4" room="4" start="true" />
+		<weapons power="2" max="6" room="8" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="3">
+		<weapon name="ZENITH_1" />
+	</weaponList>
+	<droneList drones="5" count="3">
+		<drone name="SHIP_REPAIR" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="4" />
+	<aug name="EX_O2_MASKS" /> 
+	<aug name="SLUG_DUPLICATOR_GHOST" />
+	<aug name="EQUINOID_DUPLICATOR" />
+</shipBlueprint>
+
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAME" layout="newtonbeam_kyle" img="newtonbeam_kyle">
+	<class>Leah's Brother's Cruiser</class>
+	<name>The Kyle-inator</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAME_unlock"/>
+	<desc>We are going to Kick Your Ass to death.</desc>
+	<systemList>
+		<doors power="1" max="3" room="6" start="false" img="room_doors_5">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="7" room="13" start="true" img="room_drones" />
+		<engines power="1" max="5" room="2" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<medbay power="1" max="3" room="5" start="true" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<oxygen power="1" max="2" room="4" start="true" img="room_oxygen" />
+		<pilot power="1" max="2" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<shields power="2" max="10" room="3" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="7" start="false" />
+		<weapons power="4" max="10" room="10" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="LIST_WEAPONS_REBEL" />
+		<weapon name="LIST_WEAPONS_REBEL" />
+		<weapon name="LIST_WEAPONS_REBEL" />
+	</weaponList>
+	<droneList drones="6" count="2">
+		<drone name="LIST_DRONES_ENEMY_STANDARD" />
+		<drone name="LIST_DRONES_ENEMY_STANDARD" />
+	</droneList>
+	<health amount="20" />
+	<maxPower amount="10" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAME_2" layout="newtonbeam_kyle_2" img="newtonbeam_kyle_2">
+	<class>Leah's Brother's Cruiser</class>
+	<name>The Underwhelming</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAME_2_unlock"/>
+	<desc>After taking yet another cruiser management class, Kyle decided to go back to the basics. This cruiser may not start off very strong, but its potential is unmatched. If you can survive long enough to harness that potential, anyways.</desc>
+	<systemList>
+		<artillery power="2" max="5" room="8" start="false" weapon="LASER_FROST_2" img="room_artillery_3_leah_2x1" />
+		<artillery power="2" max="5" room="11" start="false" weapon="LASER_FROST_2" img="room_artillery_3_leah_2x1" />
+		<battery power="1" room="19" start="true" img="room_battery_3" />
+		<cloaking power="1" max="4" room="21" start="false" img="room_cloaking_orchid_3" />
+		<clonebay power="1" max="2" room="20" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" max="2" room="10" start="false" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" max="10" room="18" start="false" img="room_drones_15" />
+		<engines power="3" max="6" room="0" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="16" start="false" img="room_hacking" />
+		<medbay power="1" max="2" room="20" start="false" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="15" start="true" img="room_mind_5" />
+		<oxygen power="1" max="1" room="4" start="true" img="room_oxygen_manta_a" />
+		<pilot power="1" room="1" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="9" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" max="10" room="6" start="true" img="room_shields_9_leah_3x1">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="5" start="false" />
+		<weapons power="4" max="10" room="7" start="true" img="room_weapons_12">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="12" count="4">
+		<weapon name="LASER_CHAINGUN" />
+		<weapon name="LASER_CHARGE_CHAIN" />
+		<weapon name="LEAH_LIST_PLAYER_SHIP_KYLE_2_WEAPONS" />
+	</weaponList>
+	<droneList drones="12" count="2"/>
+	<health amount="25" />
+	<maxPower amount="8" />
+	<aug name="LEAH_KYLE_PACKAGE" />
+</shipBlueprint>
+
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAME_3" layout="newtonbeam_kyle_3" img="newtonbeam_kyle_3">
+	<class>Leah's Brother's Cruiser</class>
+	<name>The Filial Family</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAME_3_unlock"/>
+	<desc>We are going to Kick Your Ass to death.</desc>
+	<systemList>
+		<battery power="1" room="15" start="false" img="room_battery" />
+		<cloaking power="1" room="14" start="false" img="room_cloaking_7" />
+		<clonebay power="2" room="6" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="13" start="false" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" max="12" room="11" start="false" img="room_drones_7" />
+		<engines power="4" room="0" start="true" img="room_engines_10_1x2">
+			<slot>
+				<direction>left</direction>
+				<number>3</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="8" start="false" img="room_hacking_3" />
+		<medbay power="2" room="5" start="true" img="room_medbay_6">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="7" start="false" img="room_mind_11_1x1" />
+		<oxygen power="1" room="16" start="true" img="room_oxygen_2" />
+		<pilot power="2" room="1" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="12" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="3" max="12" room="9" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="2" start="true" />
+		<weapons power="4" max="12" room="10" start="true" img="room_weapons_3">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="9" count="4">
+		<weapon name="LEAH_LIST_PLAYER_SHIP_KYLE_3_WEAPONS_FLAK" />
+		<weapon name="LEAH_LIST_PLAYER_SHIP_KYLE_3_WEAPONS_FLAK" />
+		<weapon name="LEAH_LIST_PLAYER_SHIP_KYLE_3_WEAPONS_BEAM" />
+	</weaponList>
+	<droneList drones="9" count="2" />
+	<health amount="30" />
+	<maxPower amount="11" />
+	<aug name="LOCKED_LEAH_KYLE_STUN_BOOST" />
+	<aug name="PDS_DISABLE" />
+</shipBlueprint>
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMF" layout="newtonbeam_paradox" img="newtonbeam_paradox">
+	<class>Leah's Paradox Cruiser</class>
+	<name>The Paradox</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMF_unlock"/>
+	<desc>"-st replace me with another Leah! Our rivalry is, was, the stuff of legends! You can't just have any old Leah be your rival, you need to have ME as your rival! Our rivalry just wouldn't be the same without me! You're ridiculous! I've never had anyone do this to me before, that's how ridiculous this is! Y-" You cut off communications and go back into the hangar.</desc>
+	<systemList>
+		<artillery power="1" room="10" start="false" weapon="ARTILLERY_REBEL_ION" img="USE" />
+		<battery power="1" room="15" start="true" img="room_battery_3" />
+		<cloaking power="1" room="5" start="true" img="room_cloaking_9" />
+		<clonebay power="1" room="6" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="13" start="false" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" room="3" start="false" img="room_drones_14" />
+		<engines power="1" room="0" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="7" start="false" img="room_hacking_5" />
+		<medbay power="1" room="2" start="false" img="room_medbay_6">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_2" />
+		<oxygen power="3" room="16" start="true" img="room_oxygen_9" />
+		<pilot power="3" max="2" room="8" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="2" room="14" start="false" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="12" start="false" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="2" max="3" room="4" start="true" />
+		<weapons power="4" room="11" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="8" count="3">
+		<weapon name="LASER_FIRE_SPECIAL" />
+		<weapon name="LASER_FIRE_SPECIAL" />
+		<weapon name="BOMB_CHERRI" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="6" />
+	<aug name="LOCKED_LEAH_REFRESH_SHIELD" />
+	<aug name="LEAH_VENGEANCE" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMF_2" layout="newtonbeam_her_oracle" img="newtonbeam_her_oracle">
+	<class>Leah's Paradox Cruiser</class>
+	<name>Her Oracle</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMF_2_unlock"/>
+	<desc>Hello! :)</desc>
+	<systemList>
+		<artillery power="5" room="37" start="true" weapon="ARTILLERY_COALITION_CEALAFORMER" img="USE" />
+		<battery power="1" room="21" start="false" img="USE" />
+		<cloaking power="1" room="27" start="true" img="USE" />
+		<clonebay power="1" max="2" room="9" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" max="2" room="32" start="false" img="USE">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="3" max="3" room="16" start="true" img="USE" />
+		<engines power="2" room="0" start="true" img="USE">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="3" room="4" start="true" img="USE" />
+		<medbay power="1" max="2" room="10" start="false" img="USE">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="7" start="false" img="USE" />
+		<oxygen power="1" max="3" room="39" start="true" img="USE" />
+		<pilot power="3" room="24" start="true" img="USE">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="2" room="20" start="false" img="USE">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="15" start="true" img="USE">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="22" start="false" />
+		<weapons power="3" room="30" start="true" img="USE">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="5" count="4">
+		<weapon name="LEAH_ARTILLERY_REBEL_LASER" />
+		<weapon name="LEAH_ARTILLERY_FLAK" />
+		<weapon name="LEAH_ARTILLERY_BOSSMV_BEAM" />
+		<weapon name="LEAH_ARTILLERY_BOSS_4_ALT" />
+	</weaponList>
+	<droneList drones="5" count="1" />
+	<health amount="25" />
+	<maxPower amount="8" />
+	<aug name="LOCKED_LEAH_REFRESH_SHIELD" />
+	<aug name="LOCKED_NANITE_GAS" />
+	<aug name="LEAH_PARADOX_WARNING" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONBEAMF_3" layout="newtonbeam_paradox" img="newtonbeam_paradox">
+	<class>Leah's Paradox Cruiser</class>
+	<name>The pAradox</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMF_3_unlock"/>
+	<desc>An alternate version of the Type A Paradox Cruiser. This variant relies on its Power Cores to power its weapons.</desc>
+	<systemList>
+		<artillery power="1" room="10" start="false" weapon="ARTILLERY_REBEL_ION" img="USE" />
+		<battery power="1" max="2" room="15" start="false" img="room_battery_3" />
+		<cloaking power="1" room="5" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="6" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="3" room="13" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="1" room="3" start="false" img="room_drones_14" />
+		<engines power="2" room="0" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="2" room="7" start="true" img="room_hacking_5" />
+		<medbay power="1" room="2" start="true" img="room_medbay_6">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_2" />
+		<oxygen power="1" max="3" room="16" start="true" img="room_oxygen_9" />
+		<pilot power="1" room="8" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="3" room="14" start="false" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="3" room="12" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="4" start="true" />
+		<weapons power="2" max="5" room="11" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="6" count="3">
+		<weapon name="POWER_CORE" />
+		<weapon name="POWER_CORE" />
+		<weapon name="LEAH_LIST_PLAYER_SHIP_PARADOX_3_WEAPONS" />
+	</weaponList>
+	<droneList drones="6" count="2" />
+	<health amount="30" />
+	<maxPower amount="5" />
+	<aug name="LOCKED_LEAH_REFRESH_SHIELD" />
+	<aug name="LEAH_VENGEANCE" />
+</shipBlueprint>
+
+
+<!--------------------------------NEW-SHIP----------------------------------->
+
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONMEME" layout="newtonbeam_sylvan" img="newtonbeam_sylvan">
+	<class>Leah's ??? Cruiser</class>
+	<name>T. Beam Master</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMD_unlock"/>
+	<desc>"Sssend the ssstranger my regardsss, other me."</desc>
+	<systemList>
+		<drones power="2" max="16" room="2" start="true" img="room_drones" />
+		<engines power="3" max="8" room="6" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<oxygen power="1" max="3" room="1" start="true" img="room_oxygen_12_leah" />
+		<pilot power="2" max="3" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<shields power="2" max="16" room="8" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<weapons power="1" max="16" room="4" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="20" count="4">
+		<weapon name="BEAM_4_SYLVAN" />
+		<weapon name="BEAM_4_SYLVAN" />
+	</weaponList>
+	<droneList drones="20" count="2">
+		<drone name="HELLRAISER_HULL_PLAYER" />
+		<drone name="HELLRAISER_HULL_PLAYER" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="10" />
+	<aug name="SYLVAN_SHIELD" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONMEME_2" layout="newtonmeme" img="newtonmeme">
+	<class>Leah's ??? Cruiser</class>
+	<name>Baddest Leah (Bad!)</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMD_unlock"/>
+	<desc>Leah somehow managed to requisition... whatever this is supposed to be?</desc>
+	<systemList>
+		<artillery power="2" max="4" room="11" start="true" weapon="ARTILLERY_MFK_DYLAN" />
+		<artillery power="2" max="4" room="9" start="true" weapon="ARTILLERY_MFK_DYLAN" />
+		<artillery power="2" max="4" room="18" start="true" weapon="ARTILLERY_MFK_DYLAN" />
+		<artillery power="2" max="4" room="27" start="true" weapon="ARTILLERY_MFK_DYLAN" />
+		<cloaking power="1" max="2" room="29" start="true" img="room_cloaking_orchid_3_3x1" />
+		<engines power="1" max="3" room="4" start="true" img="room_engines_10_1x1">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<hacking power="1" max="2" room="14" start="true" img="room_hacking_4" />
+		<oxygen power="1" max="2" room="31" start="true" img="room_oxygen_orchid_3_1x1" />
+		<pilot power="1" max="2" room="3" start="true" img="room_pilot_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" max="2" room="0" start="true" img="room_sensors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" max="6" room="8" start="true" img="room_shields_9_leah">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" max="3" room="22" start="true" />
+		<weapons power="1" max="6" room="17" start="true" img="room_weapons_right">
+			<slot>
+				<direction>right</direction>
+				<number>3</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="MODULE_HULL" />
+		<weapon name="MODULE_HULL" />
+		<weapon name="MODULE_HULL" />
+	</weaponList>
+	<droneList drones="0" count="1" />
+	<health amount="30" />
+	<maxPower amount="20" />
+	<aug name="LOCKED_LEAH_DIVIDED" />
+	<aug name="ANCIENT_SHIELD" />
+	<aug name="EX_DEFENSE_SCRAMBLER" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_NEWTONMEME_3" layout="newtonbeam_asteroid" img="newtonbeam_asteroid">
+	<class>Leah's ??? Cruiser</class>
+	<name>A Cruiser</name>
+	<unlock id="ship_PLAYER_SHIP_NEWTONBEAMD_unlock"/>
+	<desc>Haha, I bet you thought this was an actual ship.</desc>
+	<systemList>
+		<artillery power="1" max="5" room="5" start="true" weapon="PRIME_LASER" img="USE" />
+		<cloaking power="1" room="4" start="true" img="USE" />
+		<engines power="1" max="1" room="3" start="true" img="room_engines_10_1x1">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<oxygen power="1" max="1" room="6" start="true" img="USE" />
+		<pilot power="1" max="1" room="0" start="true" img="room_pilot_2_1x1_up">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<shields power="1" max="4" room="2" start="true" img="room_shields_leah_1x1_down">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<weapons power="16" max="16" room="1" start="true" img="room_weapons_1x1_right">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>3</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="0" count="3">
+		<weapon name="ASTEROID_ENEMY" />
+		<weapon name="PDS_SHOT" />
+		<weapon name="BEAM_HARDSCIFI" />
+	</weaponList>
+	<droneList drones="0" count="1" />
+	<health amount="11" />
+	<maxPower amount="16" />
+	<aug name="ROCK_ARMOR" />
+	<aug name="RADIANT_GAS" />
+	<aug name="SYSTEM_CASING_NEW" />
+</shipBlueprint>
+
+
+<!--------------------------------WEAPONS----------------------------------->
+
+
+<weaponBlueprint name="BIO_1_LEAH">
+	<type>BEAM</type>
+	<flavorType>Beam</flavorType>
+	<tip>tip_beam</tip>
+	<title>Anti-Bio Artillery</title>
+	<short>abio art</short>
+	<desc>Artillery: Powers a massive and extremely fast beam that pierces all shields and deals crew damage, with a small breach chance.</desc>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<persDamage>5</persDamage>
+	<sp>10</sp>
+	<breachChance>1</breachChance>
+	<fireChance>0</fireChance>
+	<cooldown>32</cooldown>
+	<speed>40</speed>
+	<power>1</power>
+	<cost>45</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>500</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<color>
+		<r>255</r>
+		<g>140</g>
+		<b>20</b>
+	</color>
+	<weaponArt>focus_1</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="FOCUS_1_LEAH">
+	<type>BEAM</type>
+	<flavorType>Pinpoint</flavorType>
+	<tip>tip_focus</tip>
+	<title>'Leah's Toy' Pinpoint</title>
+	<short>'Leah's Toy'</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<damage>0</damage>
+	<sysDamage>1</sysDamage>
+	<persDamage>2</persDamage>
+	<sp>10</sp>
+	<fireChance>1</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>10</cooldown>
+	<speed>1</speed>
+	<power>1</power>
+	<cost>45</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>1</length>
+	<launchSounds>
+		<sound>focus_weak</sound>
+	</launchSounds>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="FOCUS_2_LEAH">
+	<type>BEAM</type>
+	<flavorType>Pinpoint</flavorType>
+	<tip>tip_focus</tip>
+	<title>'Leah's Big Toy'</title>
+	<short>'Big Toy'</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<damage>7</damage>
+	<sysDamage>0</sysDamage>
+	<persDamage>0</persDamage>
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>10</cooldown>
+	<speed>1</speed>
+	<length>1</length>
+	<power>1</power>
+	<cost>250</cost>
+	<bp>18</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="PACKAGE_LEAH_THE_BIG_ONE">
+	<type>BEAM</type>
+	<title>Leah's Beam</title>
+	<short>Leah's Beam</short>
+	<tip>tip_leah_beam</tip>
+	<desc>THE BEAMEST BEAM EVER CONCEIVED, custom ordered and beamed by the 'Beam Master'. Ready to decimate the poor fool who dared utter that the Voulge might be as strong as it gets. Delivered personally by Sylvan to your door. Er, in this case, ship?</desc>
+	<tooltip>The Largest Beam that does 7 damage per room.</tooltip>
+	<damage>7</damage>
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>40</cooldown>
+	<power>6</power>
+	<cost>250</cost>
+	<bp>18</bp>
+	<rarity>0</rarity>
+	<length>250</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>leah_beam</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_1_ARTILLERY_LEAH">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Elite 'Spetum' Artillery</title>
+	<short>€ 'Spetum' Art.</short>
+	<desc>Artillery: An elite variant of the once 'cheap but surprisingly effective' Beam weapon. Now in Artillery form.</desc>
+	<tooltip>Artillery: </tooltip>
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>2</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>11</cooldown>
+	<speed>6</speed>
+	<power>1</power>
+	<cost>75</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>60</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_1</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="PACKAGE_LEAH_THE_BIG_ONE_ARTILLERY">
+	<type>BEAM</type>
+	<title>Leah's Artillery</title>
+	<short>Leah's Art.</short>
+	<desc>Artillery: THE BEAMEST BEAM EVER CONCEIVED, custom ordered and beamed by the 'Beam Master'. Somehow converted into Artillery.</desc>
+	<tooltip>Artillery: </tooltip>
+	<damage>7</damage>
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>60</cooldown>
+	<speed>4</speed>
+	<power>0</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<length>250</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>leah_beam</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="ANCIENT_LASER_3_ARTILLERY_LEAH">
+	<type>LASER</type>
+	<flavorType>Aether Laser</flavorType>
+	<title>Harbinger MK III Artillery</title>
+	<short>Harb. III Art.</short>
+	<desc>Artillery: An incredibly powerful Laser manufactured by the Obelisks that can cause much more havoc than your average Burst Laser. Now in Artillery form.</desc>
+	<tooltip>Artillery: </tooltip>
+	<damage>1</damage>
+	<shots>8</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>6</breachChance>
+	<cooldown>60</cooldown>
+	<hullBust>1</hullBust>
+	<power>4</power>
+	<cost>140</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>laser_ancient</image>
+	<launchSounds>
+		<sound>ancient_laser</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ancient_laser3</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BOMB_BUFF_ARTILLERY_LEAH">
+	<type>BOMB</type>
+	<tip>tip_bombuff</tip>
+	<title>Stimulant Bomb Artillery</title>
+	<short>Stim B. Art.</short>
+	<desc>Artillery: Four self-teleporting stimulant units that grant allied crew a 100% bonus to their movement, damage, and repair speed for 10 seconds. Now in Artillery form.</desc>
+	<tooltip>Artillery: </tooltip>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<accuracyMod>30</accuracyMod>
+	<statBoosts>
+		<statBoost name="moveSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>2.0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALLIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+			<boostAnim>pheromones</boostAnim>
+		</statBoost>
+		<statBoost name="damageMultiplier">
+			<boostType>MULT</boostType>
+			<amount>2.0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALLIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+		<statBoost name="sabotageSpeedMultiplier">
+			<boostType>MULT</boostType>
+			<amount>2.0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALLIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+		<statBoost name="repairSpeed">
+			<boostType>MULT</boostType>
+			<amount>2.0</amount>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALLIES</crewTarget>
+			<droneTarget>CREW</droneTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>10</duration>
+		</statBoost>
+	</statBoosts>
+	<missiles>0</missiles>
+	<shots>4</shots>
+	<simultaneousFire>true</simultaneousFire>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>18</cooldown>
+	<power>1</power>
+	<cost>60</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>bomb_heal</image>
+	<explosion>explosion_big1_heal</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>healBomb</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_buff</weaponArt>
+	<iconImage>bomb_heal</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MINELAUNCHER_1_LEAH">
+	<type>BURST</type>
+	<tip>tip_mine</tip>
+	<title>Elite Elite 'Ra' Mine Launcher</title>
+	<short>€€ 'Ra'</short>
+	<desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Also serves as an efficient way to lay traps for the fleet.
+	
+	At empty beacons provides 2 fleet delay for 7 missiles.</desc>
+	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>75</radius>
+	<damage>2</damage>
+	<sysDamage>-2</sysDamage>
+	<missiles>2</missiles>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>4</fireChance>
+	<breachChance>4</breachChance>
+	<cooldown>12</cooldown>
+	<power>3</power>
+	<cost>120</cost>
+	<bp>2</bp>
+	<speed>15</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="4" fake="false">mine_large</projectile>
+	</projectiles>
+	<!--<image>mine_large</image>-->
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>minelauncher_3</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="SHOTGUN_INSTANT_LEAH">
+	<type>BURST</type>
+	<flavorType>Preemptive Projectile Blast</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Rusty Pre-emptive Flak</title>
+	<tip>tip_flak</tip>
+	<short>R. Pre-Flak</short>
+	<desc>This rusty shotgun weapon charges instantly, but clogs up and fires only 1 flak projectile.</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 1 damage.</tooltip>
+	<radius>20</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<spin>360</spin>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>1</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>-9</amount>
+		<count>2</count>
+	</boost>
+	<projectiles>
+		<projectile count="1" fake="true">debris_small</projectile>
+		<projectile count="1" fake="false">debris_med</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>shotgun_adv</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="LEAH_ARTILLERY_REBEL_LASER">
+	<type>LASER</type>
+	<title>Rebel Laser Artillery</title>
+	<short>Laser Artillery</short>
+	<desc>[Base cooldown: 15] A relatively quick charging burst of lasers with moderate status effect chances.</desc>
+	<tooltip>Artillery: A relatively quick charging burst of lasers with moderate status effect chances.</tooltip>
+	<damage>1</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>4</fireChance>
+	<breachChance>4</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<image>laser_heavy</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_rebel_laser</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="LEAH_ARTILLERY_FLAK">
+	<type>BURST</type>
+	<flavorType>Physical Projectile Blast</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Flak Artillery</title>
+	<short>Flak Artillery</short>
+	<desc>[Base cooldown: 22] Fires a burst of 8 flak projectiles.</desc>
+	<tooltip>Artillery: Fires a burst of 8 flak projectiles.</tooltip>
+	<radius>35</radius>
+	<damage>1</damage>
+	<spin>720</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>22</cooldown>
+	<power>3</power>
+	<cost>75</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="4" fake="false">debris_large</projectile>
+		<projectile count="4" fake="false">debris_med</projectile>
+		<projectile count="7" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<iconImage>flak</iconImage>
+	<weaponArt>artillery_fed</weaponArt> 
+</weaponBlueprint>
+
+<weaponBlueprint name="LEAH_ARTILLERY_BOSSMV_BEAM">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Multiverse Boss Beam</title>
+	<short>Multiverse Boss Beam</short>
+	<desc>We are going to beat you to death.</desc>
+	<tooltip>Beam Artillery</tooltip>
+	<damage>2</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>22</cooldown>
+	<power>2</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>3</amount>
+		<count>4</count>
+	</boost>
+	<length>100</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>bossmv_beam</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="LEAH_ARTILLERY_BOSS_4_ALT">
+	<type>LASER</type>
+	<title>Boss Stun Ion</title>
+	<short>Boss Stun Ion</short>
+	<locked>1</locked>
+	<desc>1 damage ion 3 shots</desc>
+	<tooltip>1 damage ion 3 shots</tooltip>
+	<damage>0</damage>
+	<stun>5</stun>
+	<ion>1</ion>
+	<speed>40</speed>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>28</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_stun_shot</image>
+	<explosion>explosion_stun_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>boss_4_alt</weaponArt>
+</weaponBlueprint>
+
+<augBlueprint name="LEAH_VENGEANCE">
+	<title>Leah's Vengeance</title>
+	<desc>You're not sure how this works and Leah refuses to tell you. Fires a shield-piercing, system damaging pinpoint whenever you take damage.</desc>
+	<cost>50</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LEAH_VENGEANCE_BIG">
+	<title>Leah's Overreaction</title>
+	<desc>You're not sure how this works and Leah refuses to tell you. Fires THE BEAMEST BEAM whenever you take damage. However, due to energy constraints, the beam has been converted to a pinpoint.</desc>
+	<cost>100</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LOCKED_LEAH_PREIGNITER">
+	<title>Weapon Preigniter</title>
+	<desc>Weapons are made immediately available after an FTL jump. This variant is locked to your ship.</desc>
+	<cost>120</cost>
+	<bp>0</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LOCKED_LEAH_DIVIDED">
+	<title>Leah's Division</title>
+	<desc>All Leahs and variants of Leah have 25% less health and deal 25% less damage.</desc>
+	<cost>10</cost>
+	<bp>0</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LEAH_KYLE_PACKAGE">
+	<title>Kyle's Package</title>
+	<desc>A package of mysterious origin, labelled 'Kick Your Ass Kyle's Property - DO NOT TOUCH'. Perhaps somebody else would know what to do with it?</desc>
+	<cost>10</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LOCKED_LEAH_KYLE_STUN_BOOST">
+	<title>Kyle's Trophy</title>
+	<desc>A trophy of 'mysterious origin', labelled 'Kick Your Ass Kyle's Property - DO NOT TOUCH'. Grants non-stun-inflicting weapons a 40% chance to stun crew for three seconds.</desc>
+	<cost>40</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LOCKED_LEAH_REFRESH_SHIELD">
+	<title>Mysterious Shield</title>
+	<desc>Mysterious shielding powered by... something. Unlike standard Energy Shields, it has only 1 hit point, but has a 50% chance to refresh itself whenever the enemy cruiser's weapons are fired.</desc>
+	<cost>100</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LEAH_PARADOX_WARNING">
+	<title>Fair Warning</title>
+	<desc>Hello! :) I'm here to tell you I've messed with your crew's pathing skills :O. Have a nice day! :)</desc>
+	<cost>20</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="LEAH_SHIP_LEAH">
+	<title>Leah's Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<augBlueprint name="LEAH_SHIP_LEAH_ABANDONED">
+	<title>Leah's Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<augBlueprint name="LEAH_SHIP_LEAH_MEME">
+	<title>Leah's Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+
+<crewBlueprint name="unique_thing_leah">
+	<desc>A... thing. Your long time nemesis?</desc>
+	<cost>500</cost>
+	<title>Beam... Thing?</title>
+	<short>Beam... Thing?</short>
+	<rarity>0</rarity>
+	<powerList>
+		<power>???</power>
+	</powerList>
+</crewBlueprint>
+
+<crewBlueprint name="unique_battery_leah">
+	<desc>batteries. they're alright.</desc>
+	<cost>200</cost>
+	<title>Batteries</title>
+	<short>Batteries</short>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Provides 5 bonus power.</power>
+		<power>Slightly radioactive against enemy crew.</power>
+		<power>Can teleport when not in the Artillery room. For any bugs ;).</power>
+	</powerList>
+</crewBlueprint>

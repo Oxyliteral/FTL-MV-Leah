@@ -1,0 +1,44 @@
+<mod:findName type="event" name="STORAGE_CHECK_CREW_REAL">
+
+<mod-append:choice req="LIST_CREW_LEAH" hidden="true" blue="false">
+     <text>Look for Leah.</text> 
+     <event load="STORAGE_CHECK_CREW_LEAH_TALK"/>
+</mod-append:choice>
+
+<mod:findWithChildLike type="choice" child-type="text">
+      <mod:selector>Nevermind, do something else.</mod:selector>
+      <mod:setAttributes max_group="998" req="pilot" lvl="1" blue="false"/><!--Moves the nevermind option to be below everything else-->
+</mod:findWithChildLike>
+</mod:findName>
+
+<event name="STORAGE_CHECK_CREW_LEAH_TALK">
+    <text load="TEXT_CREW_TALK_LEAH"/>
+    <achievement>ACH_ACC_SOCIALIZE</achievement>
+    <choice>
+        <text>Continue...</text>
+        <event load="STORAGE_CHECK_CREW"/>
+    </choice>
+</event>
+
+<textList name="TEXT_CREW_TALK_LEAH">
+<text>You enter Leah's quarters, but see no sign of her. An open Hektar magazine is open on her bed, advertising various new beam technology.</text>
+<text>You hear Leah reciting various villain monologues through her door. You decide not to disturb her, lest she make you review and critique all of them.</text>
+<text>You ask Leah why she decided to join the rebellion. She tells you she originally wanted to have an Orchid ship, but the sector was too peaceful to find a good nemesis.</text>
+<text>Leah claims she had no idea that the Rebellion hated aliens so much, as apparently she'd been banned from all Rebellion meetings and discussions due to "excessive shouting".</text>
+<text>Leah complains about how the Rebels are the bad guys because she doesn't get to live out her movie fantasy of being an action hero and blowing an empire up dramatically.</text>
+<text>Leah asks for feedback on her list of potential new nemesises, which includes Sylvan. You gently tell her she should probably just stick to fighting you.</text>
+<text>Leah whines about how you can't fight when you're working together on the same ship. You tell her that once the flagship is defeated, you'll fight her in a one on one duel.</text>
+<text>You find Leah breeding tiny terrestrial spiders in her room. She swears that they’ll eventually be combat ready if she trains them well enough.</text>
+<text>You question Leah on why she likes beams so much. Apparently she once saw a flagship get destroyed with two glaives in one shot and has been fascinated ever since.</text>
+<text>You ask Leah if she could try getting more personal warp-buttons for each of your crew members. She refuses, saying that knowing you won't die removes all tension and makes you a 'certified beyatch'.</text>
+<text>Leah is busy experimenting with a laser pointer, which she swears is the future of space-age combat.</text>
+<text>Leah is looking out of a ship window wistfully. You ask her what's wrong and she says she’s just practicing poses for if she ever needs to give a dramatic speech during your journey.</text>
+<text>Leah thinks you should invest more into beam technology. Obviously. Beyatch.</text>
+<text>Leah hands you a handwritten letter thanking you for being such a great nemesis. It's a sweet gesture, but the tilde after your name concerns you a bit.</text>
+<text>Leah swears she'd sacrifice her life for the sake of the mission. You ask if she really means it, and she says she’s "not sure, but I've always wanted to say that".</text>
+<text>You ask Leah what it was like to defect to the Federation. She says one of her warps accidentally teleported her into a Federation barracks, and she thought that was a good a time as any to swap sides.</text>
+<text>Leah blocks your path and says, "We meet again, Captain, for the last time!" before stuttering and admitting she hasn't written the rest of that speech.</text>
+<text>Leah politely asks that you don't use shields the next time you fight each other.</text>
+<text>Leah has mixed feelings on the Flagship. On one hand, destroying it will save thousands, maybe even millions of lives, however, on the other hand, she's a massive fan of the ship's paint-job.</text>
+
+</textList>

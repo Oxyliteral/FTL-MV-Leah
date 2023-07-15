@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_class">Leah's Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_name">The Beam Master</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_desc">The ship of the Infamous Beam Master, better known as Leo... or, wait was it Liam? Leviticus? Lizzy???</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_2_desc">With a permenant mind control rig installed on the Beam Master's ship, her ship was quickly painted in federation colours and turned into a multiverse capable ship</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_2_name">The Rulebook</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_2_class">Leah's Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMA_2_unlock">Beat the game with Leah's Original Cruiser Type A to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_3_desc">After careful thought, Leah realized her old ship wasn't ready for the challenges of the multiverse. However, in her haste to upgrade her ship, she forgot to make it compatible with shields. Oops.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_3_name">The Semi-Competent</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMA_3_class">Leah's Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMA_3_unlock">Consult the advice of a certain beam afficionado about a certain artifact to unlock this ship.</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_class">Leah's Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_name">The Laser Master</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_desc">The ship of the infamous Laser Master. Leo had to sell all their ammunition and drones for this. Who needs them when you have lasers, anyway, right Liam? At least Leviticus kept the Weapons Control this time. Unfortunately, Lizzy forgot about her reactor. Woops.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMB_unlock">Have a certain beam afficionado collect a certain Travelling Merchant's package to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_2_desc">Leo, Liam, Leviticus, and Lizzy had always worked under the moniker 'The Beam Master'.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_2_name">The Divided</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_2_class">Leah's Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMB_2_unlock">Beat the game with the Type A to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_3_desc">After careful thought, Leah realized her old ship wasn't ready for the challenges of the multiverse. So she teamed up with Her. Oh god, now there are two of them. Along with a flurry of systems, this ship is a formidable foe to any who dare engage it.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_3_name">Her</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMB_3_class">Leah's Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMB_3_unlock">Unlock the Type B to unlock this ship.</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_class">Leah's Advanced Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_name">The Whole</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_desc">"Dude, I got all my friends ready to kick your ass, beyatch!" It seems Leah spent most of her budget on her ship's systems and crew. By most, we mean all.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMC_unlock">Sacrifice a Tiny Bug to rescue Leah from the Flagship's remains OR win the game with Leah's Cruiser Type C (Her) to unlock this ship</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_2_desc">Leah somehow got her hands on THE BEAMEST BEAM EVER CONCEIVED. Unfortunately, it's her only offensive weapon.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_2_name">The Post-Igniter</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_2_class">Leah's Advanced Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMC_2_unlock">Unlock the Type A to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_3_desc">Leah somehow installed THE BEAMEST BEAM EVER CONCEIVED into her ship's artillery. The Rebellion, along with every other ship owner, will regret ever having messed with you.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_3_name">The Beam Master</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMC_3_class">Leah's Advanced Cruiser</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMC_3_unlock">Win the game with the Type B to unlock this ship.</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMD_class">Leah's Abandoned Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMD_name">The UnRespectable</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMD_desc">After a prank gone wrong, Leah refuses to touch this ship. Fortunately, she's given it to the Federation for use. ...Er, are you sure this is fortunate...?</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMD_unlock">Unlock the Types A, B, and C of Leah's Original Cruiser, Leah's Cruiser, and Leah's Advanced Cruiser to unlock this ship.</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAME_class">Leah's Brother's Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_name">The Kyle-ian</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_desc">We are going to Kick Your Ass to death.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAME_unlock">Bring a certain beam afficionado to see her brother to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAME_2_class">Leah's Brother's Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_2_name">The Kyle-ian</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_2_desc">We are going to Kick Your Ass to death.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAME_2_unlock">Win the game with the Type A to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAME_3_class">Leah's Brother's Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_3_name">The Kyle-ian</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAME_3_desc">We are going to Kick Your Ass to death.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAME_3_unlock">Unlock the Type B to unlock this ship.</text>
+
+
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_class">Leah's Paradox Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_name">The Paradox</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_desc">"-st replace me with another Leah! Our rivalry is, was, the stuff of legends! You can't just have any old Leah be your rival, you need to have ME as your rival! Our rivalry just wouldn't be the same without me! You're ridiculous! I've never had anyone do this to me before, that's how ridiculous this is! Y-" You cut off communications and go back into the hangar.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMF_unlock">Bring a certain beam afficionado to see another certain (very pissed off) beam afficionado and keep her talking to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_2_class">Leah's Paradox Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_2_name">Her Oracle</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_2_desc">Hello! :)</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMF_2_unlock">Unlock the Type A to unlock this ship.</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_3_class">Leah's Paradox Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_3_name">The pAradox.</text>
+<text name="text_PLAYER_SHIP_NEWTONBEAMF_3_desc">An alternate version of the Type A Paradox Cruiser. This variant relies on its Power Cores to power its weapons.</text>
+<text name="ship_PLAYER_SHIP_NEWTONBEAMF_3_unlock">Win the game with the Type A to unlock this ship.</text>
+
+
+
+<text name="text_PLAYER_SHIP_NEWTONMEME_class">Leah's ??? Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_name">Trav. Beam Master</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_desc">"Sssend the ssstranger my regardsss, other me."</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONMEME_2_class">Leah's ??? Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_2_name">Baddest Leah (Bad!)</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_2_desc">Leah somehow managed to requisition... whatever this is supposed to be?</text>
+
+
+<text name="text_PLAYER_SHIP_NEWTONMEME_3_class">Leah's ??? Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_3_name">A Cruiser</text>
+<text name="text_PLAYER_SHIP_NEWTONMEME_3_desc">Haha, I bet you thought this was an actual ship.</text>

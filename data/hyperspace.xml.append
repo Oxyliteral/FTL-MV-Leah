@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+
+<!--------------------------------SCRIPTS----------------------------------->
+
+	<mod:findLike type="scripts">
+		<mod-append:script>data/scripts/weapons.lua</mod-append:script>
+		<mod-append:script>data/scripts/augments.lua</mod-append:script>
+	</mod:findLike>
+
+<!--------------------------------SHIPS----------------------------------->
+	<mod:findLike type="ships">
+	
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+        		<name>icon_leah_armor</name>
+         		<tooltip>LEAH's VENGEANCE:
+Every time you deal hull damage to this enemy with your weapons, a shield-piercing, system damaging beam will fire at your ship.</tooltip>
+        	</mod-append:shipIcon>
+	</mod:findLike>
+		
+		<mod:findLike type="shipOrder">
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAMA</mod-append:ship>
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAMB</mod-append:ship>
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAMC</mod-append:ship>
+			<mod-append:empty/>
+			<mod-append:empty/>
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAMF</mod-append:ship>
+			<mod-append:empty/>
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAME</mod-append:ship>
+			<mod-append:ship>PLAYER_SHIP_NEWTONBEAMD</mod-append:ship>
+			<mod-append:ship>PLAYER_SHIP_NEWTONMEME</mod-append:ship>
+		</mod:findLike>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAMA" b="true" c="true" >
+		<unlock variant="b" silent="false">
+            		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAMA</shipReq>
+        	</unlock>
+		<unlock variant="c" silent="false">
+           		<type>4</type>
+		</unlock>
+		</mod-append:ship>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAMB" b="true" c="true" >
+		<unlock variant="a" silent="false">
+            		<type>4</type>
+        	</unlock>
+		<unlock variant="b" silent="false">
+            		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAMB</shipReq>
+        	</unlock>
+		<unlock variant="c" silent="false">
+           		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMB_2</ship>
+			</otherUnlocks>
+		</unlock>
+		</mod-append:ship>
+		
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAMC" b="true" c="true" >
+		<unlock variant="a" silent="false">
+            		<type>4</type>
+        	</unlock>
+		<unlock variant="a" silent="false">
+            		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAMB_3</shipReq>
+        	</unlock>
+		<unlock variant="b" silent="false">
+           		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMC</ship>
+			</otherUnlocks>
+        	</unlock>
+		<unlock variant="c" silent="false">
+           		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAMC_2</shipReq>
+		</unlock>
+		</mod-append:ship>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAMD">
+		<unlock variant="a" silent="false">
+            		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMA</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMA_3</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMB</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMB_2</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMB_3</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMC</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMC_2</ship>
+				<ship>PLAYER_SHIP_NEWTONBEAMC_3</ship>
+			</otherUnlocks>
+        	</unlock>
+		</mod-append:ship>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAME" b="true" c="true" >
+		<unlock variant="a" silent="false">
+            		<type>4</type>
+        	</unlock>
+		<unlock variant="b" silent="false">
+            		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAME</shipReq>
+        	</unlock>
+		<unlock variant="c" silent="false">
+           		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAME_2</ship>
+			</otherUnlocks>
+        	</unlock>
+		</mod-append:ship>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONBEAMF" b="true" c="true" >
+		<unlock variant="a" silent="false">
+            		<type>4</type>
+        	</unlock>
+		<unlock variant="b" silent="false">
+            		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMF</ship>
+			</otherUnlocks>
+        	</unlock>
+		<unlock variant="c" silent="false">
+            		<type>2</type>
+            		<shipReq>PLAYER_SHIP_NEWTONBEAMF</shipReq>
+        	</unlock>
+		</mod-append:ship>
+
+		<mod-append:ship name="PLAYER_SHIP_NEWTONMEME" b="true" c="true">
+		<unlock variant="a" silent="false">
+            		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMD</ship>
+			</otherUnlocks>
+        	</unlock>
+		<unlock variant="b" silent="false">
+            		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMD</ship>
+			</otherUnlocks>
+        	</unlock>
+		<unlock variant="c" silent="false">
+            		<type>3</type>
+			<otherUnlocks>
+				<ship>PLAYER_SHIP_NEWTONBEAMD</ship>
+			</otherUnlocks>
+        	</unlock>
+		</mod-append:ship>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMA">
+			<crewLimit>8</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah room="4" name="Leah" />
+				<!--piloting-->
+				<tinybug room="0" />
+				<!--engines-->
+				<tinybug room="5" />
+				<!--weapons-->
+				<tinybug room="7" />
+				<!--shields-->
+			</crew>
+		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMA_2">
+			<crewLimit>6</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah room="1" name="Leo Liam Leviticus" />
+				<!--tp-->
+				<engi room="0" />
+				<!--piloting-->
+				<zoltan_devotee room="1" />
+				<!--tp-->
+				<leech room="1" />
+				<!--tp-->
+			</crew>
+		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMA_3">
+			<crewLimit>9</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="0" name="Leo Liam Leviticus" />
+				<!--piloting-->
+				<human_rebel_medic room="5" />
+				<!--engines-->
+				<human_rebel room="8" />
+				<!--weapons-->
+				<human_soldier room="6" />
+				<!--doors-->
+			</crew>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMB">
+			<crewLimit>6</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah room="0" name="Leah" />
+				<!--piloting-->
+				<tinybug room="5" />
+				<!--engines-->
+				<tinybug room="12" />
+				<!--weapons-->
+				<tinybug room="9" />
+				<!--shields-->
+			</crew>
+			<customReactor maxLevel="22">
+				<baseCost>25</baseCost>
+				<increment>5</increment>
+				<overrideCost coloumn="2">55</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMB_2">
+			<crewLimit>9</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah room="4" name="Leo" />
+				<!--piloting-->
+				<unique_leah room="15" name="Liam" />
+				<!--weapons-->
+				<unique_leah room="12" name="Leviticus" />
+				<!--shields-->
+				<unique_leah room="1" name="Lizzy" />
+				<!--engines-->
+			</crew>
+			<customReactor maxLevel="30">
+				<overrideCost coloumn="4">35</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMB_3">
+			<crewLimit>12</crewLimit>
+			<systemLimit>16</systemLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="2" name="Leah" />
+				<!--tp-->
+				<unique_leah_mfk room="2" name="Leah" />
+				<!--tp-->
+				<siren room="4" name="Leah" />
+				<!--piloting-->
+				<siren room="7" name="Leah" />
+				<!--weapons-->
+				<siren room="0" name="Leah" />
+				<!--shields-->
+				<siren room="5" name="Leah" />
+				<!--engines-->
+			</crew>
+			<customReactor maxLevel="40">
+				<baseCost>15</baseCost>
+				<increment>10</increment>
+				<overrideCost coloumn="1">35</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMC">
+			<crewLimit>14</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="4" name="Leah" />
+				<!--tp-->
+				<unique_leah room="0" name="Leah Applebuzz" />
+				<!--pilot-->
+				<human_soldier room="5" name="Kyle" />
+				<!--engines-->
+				<unique_vance room="4" name="Vance" />
+				<!--tp-->
+				<unique_jerry room="2" name="Jerry" />
+				<!--sensors-->
+				<unique_haynes room="1" name="Haynes" />
+				<!--shields-->
+				<unique_sylvan room="8" name="Sylvan" />
+				<!--weapons-->
+				<unique_devorak room="11" name="Devorak" />
+				<!--oxygen-->
+			</crew>
+			<customReactor maxLevel="25">
+				<baseCost>20</baseCost>
+				<increment>10</increment>
+				<overrideCost coloumn="1">35</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMC_2">
+			<crewLimit>8</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="4" name="Leah" />
+				<!--piloting-->
+				<pony_tamed room="5" />
+				<!--engines-->
+				<pony_tamed room="5" />
+				<!--engines-->
+				<pony room="7" />
+				<!--weapons-->
+			</crew>
+			<customReactor maxLevel="30">
+				<baseCost>10</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMC_3">
+			<crewLimit>6</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="0" name="Leah" />
+				<!--piloting-->
+				<slug room="12" />
+				<!--weapons-->
+				<slug room="5" />
+				<!--engines-->
+			</crew>
+			<customReactor maxLevel="30">
+				<baseCost>20</baseCost>
+				<increment>5</increment>
+				<overrideCost coloumn="1">50</overrideCost>
+				<overrideCost coloumn="2">30</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMD">
+			<crewLimit>36</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH_ABANDONED</hiddenAug>
+			<crew>
+				<shell_radiant room="0" />
+				<!--piloting-->
+				<shell_radiant room="4" />
+				<!--tp-->
+				<shell_radiant room="4" />
+				<!--tp-->
+			</crew>
+			<customReactor maxLevel="18">
+				<baseCost>18</baseCost>
+				<increment>20</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAME">
+			<systemLimit>16</systemLimit>
+			<crewLimit>8</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_REBEL</hiddenAug>
+			<crew>
+				<human_soldier room="0" name="Kyle"/>
+				<!--piloting-->
+				<human_soldier room="10" />
+				<!--weapons-->
+				<human_soldier room="2" />
+				<!--engines-->
+			</crew>
+			<customReactor maxLevel="25">
+				<baseCost>20</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAME_2">
+			<systemLimit>20</systemLimit>
+			<crewLimit>8</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_REBEL</hiddenAug>
+			<crew>
+				<human_soldier room="1" name="Kyle"/>
+				<!--piloting-->
+				<zoltan room="0" />
+				<!--engines-->
+				<mantis room="6" />
+				<!--shields-->
+				<lanius room="7" />
+				<!--weapons-->
+			</crew>
+			<customReactor maxLevel="35">
+				<baseCost>5</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAME_3">
+			<systemLimit>16</systemLimit>
+			<crewLimit>8</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_REBEL</hiddenAug>
+			<crew>
+				<human_mfk room="1" name="Kyle"/>
+				<!--piloting-->
+				<unique_leah_mfk room="10" name="Leah"/>
+				<!--weapons-->
+				<human_rebel room="0" />
+				<!--engines-->
+			</crew>
+			<customReactor maxLevel="25">
+				<baseCost>20</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMF">
+			<crewLimit>12</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_REBEL</hiddenAug>
+			<crew>
+				<unique_thing_leah room="0" name="Leah?"/>
+				<unique_leah_mfk room="8" name="Leah"/>
+				<unique_leah room="11" name="Leah Applebuzz"/>
+			</crew>
+			<customReactor maxLevel="26">
+				<baseCost>15</baseCost>
+				<increment>4</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMF_2">
+			<systemLimit>16</systemLimit>
+			<crewLimit>12</crewLimit>
+			<autoShipForce>true</autoShipForce>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH_MEME</hiddenAug>
+			<crew>
+				<unique_battery_leah room="37" name="Batteries"/>
+				<unique_leah_mfk room="24" name="Leah"/>
+				<shell_mechanic room="15" />
+				<shell_mechanic room="30" />
+				<engi_separatist room="0" />
+			</crew>
+			<customReactor maxLevel="31">
+				<baseCost>22</baseCost>
+				<increment>1</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONBEAMF_3">
+			<crewLimit>12</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_REBEL</hiddenAug>
+			<crew>
+				<unique_thing_leah room="12" name="Leah?"/>
+				<human_legion_pyro room="8" name="Pyro Leah"/>
+				<rock_paladin room="11" name="Paladin Leah"/>
+				<slug_knight room="0" name="Knight Leah"/>
+			</crew>
+			<customReactor maxLevel="26">
+				<baseCost>15</baseCost>
+				<increment>4</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONMEME">
+			<systemLimit>16</systemLimit>
+			<crewLimit>36</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>SHIP_SYLVAN</hiddenAug>
+			<crew>
+				<sylvanleah room="0" name="Syleah"/> <!--pilot-->
+				<slug_saboteur room="4"/> <!--weapons-->
+				<slug_saboteur room="8"/> <!--shields-->
+				<slug_saboteur room="6"/> <!--engines-->
+				<slug_ranger room="1"/>
+				<slug_ranger room="2"/>
+				<slug_ranger room="0"/>
+			</crew>
+			<customReactor maxLevel="40">
+				<baseCost>20</baseCost>
+				<increment>5</increment>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONMEME_2">
+			<systemLimit>16</systemLimit>
+			<crewLimit>36</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH_MEME</hiddenAug>
+			<crew>
+				<nexus_pants room="3" name="Not Leah :("/> <!--teleporter-->
+				<unique_leah room="8" name="Leo"/> <!--weapons-->
+				<unique_leah room="0" name="Liam"/> <!--teleporter-->
+				<unique_leah room="31" name="Leviticus"/> <!--teleporter-->
+				<unique_leah room="14" name="Lizzy"/> <!--teleporter-->
+				<unique_leah room="4" name="bad person"/> <!--teleporter-->
+				<unique_leah room="29" name="bad baddy"/> <!--teleporter-->
+				<unique_leah room="27" name="baddy bad"/> <!--teleporter-->
+				<unique_leah room="18" name="I"/> <!--teleporter-->
+				<unique_leah room="9" name="am"/> <!--teleporter-->
+				<unique_leah room="11" name="running"/> <!--teleporter-->
+				<unique_leah room="22" name="out"/> <!--teleporter-->
+				<unique_leah room="22" name="of"/> <!--teleporter-->
+				<unique_leah room="17" name="names"/> <!--teleporter-->
+				<orchid_cultivator room="3" name="dumb plant"/> <!--teleporter-->
+			</crew>
+			<customReactor maxLevel="69">
+				<baseCost>20</baseCost>
+				<increment>5</increment>
+				<overrideCost coloumn="1">69</overrideCost>
+				<overrideCost coloumn="2">69</overrideCost>
+				<overrideCost coloumn="3">69</overrideCost>
+				<overrideCost coloumn="4">69</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+
+		<mod-append:customShip name="PLAYER_SHIP_NEWTONMEME_3">
+			<crewLimit>3</crewLimit>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH_MEME</hiddenAug>
+			<crew>
+				<unique_leah room="0" name="Not Leah"/>
+			</crew>
+			<customReactor maxLevel="33">
+				<baseCost>111</baseCost>
+				<increment>111</increment>
+				<overrideCost coloumn="1">111</overrideCost>
+				<overrideCost coloumn="2">111</overrideCost>
+				<overrideCost coloumn="3">111</overrideCost>
+				<overrideCost coloumn="4">111</overrideCost>
+				<overrideCost coloumn="5">222</overrideCost>
+				<overrideCost coloumn="6">333</overrideCost>
+				<overrideCost coloumn="7">444</overrideCost>
+			</customReactor>
+		</mod-append:customShip>
+
+
+	<mod-append:customShip name="LEAH_BEAM_MASTER_OBELISK_PARADOX">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_leah_armor</shipIcon>
+        	</shipIcons>
+		<crew>
+			<human_mfk room="0"/> <!--pilot-->
+			<human_rebel room="4"/> <!--weapons-->
+			<human_mfk room="3"/> <!--shields-->
+			<human_rebel room="7"/> <!--engines-->
+			<unique_thing_leah room="6" name="Leah?"/>
+		</crew>
+		<autoShipForce>false</autoShipForce>
+	</mod-append:customShip>
+
+	</mod:findLike>
+	
+	<!--------------------------------augments----------------------------------->
+
+	<augments>
+		<aug name="LEAH_VENGEANCE">
+    			<locked/>
+			<function name="FOCUS_1_LEAH" value="1" useForReqs="true" warning="false" />
+			<crystalShard weapon="FOCUS_1_LEAH" value="1" stackable="false" />
+		</aug>
+
+		<aug name="LEAH_VENGEANCE_BIG">
+    			<locked/>
+			<function name="FOCUS_2_LEAH" value="1" useForReqs="true" warning="false" />
+			<crystalShard weapon="FOCUS_2_LEAH" value="1" stackable="false" />
+		</aug>
+
+		<aug name="LOCKED_LEAH_PREIGNITER">
+			<locked/>
+    			<function name="WEAPON_PREIGNITE" value="1" useForReqs="false"/>
+    		</aug>
+
+	<aug name="LOCKED_LEAH_DIVIDED">
+    	<locked/>
+		<statBoosts>
+			<statBoost name="maxHealth">
+				<boostType>MULT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+				<whiteList load="LIST_CREW_LEAH"/>
+			</statBoost>
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>0</priority>
+				<whiteList load="LIST_CREW_LEAH"/>
+			</statBoost>
+		</statBoosts>
+	</aug>
+	<aug name="LOCKED_LEAH_KYLE_STUN_BOOST">
+    	<locked/>
+    	</aug>
+
+    	<aug name="LOCKED_LEAH_REFRESH_SHIELD">
+		<superShield>
+			<value>0</value>
+			<add>1</add>
+			<color r="75.0" g="0.0" b="130.0" a="1"/>
+			<shieldImage>ship/enemy_shields_chaos_c.png</shieldImage>
+		</superShield>
+	</aug>
+
+	</augments>
+
+	<!--------------------------------stores----------------------------------->
+<store>
+	<customStore id="STORE_SYLVAN_PACKAGE_LEAH">
+	    <category type="WEAPONS">
+	    <customTitle>THE BIG ONES</customTitle>
+            <item>
+                <blueprint>PACKAGE_LEAH_THE_BIG_ONE</blueprint>
+                <modifier min="0.8" max="0.8" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_4</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_3</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>ANCIENT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>LONG BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_HULL_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_LONG_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_SCYTHE</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>CHAIN BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_ADAPT_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_ADAPT</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_CHAIN</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>PINPOINT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>FOCUS_3</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>BIO BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_GUILLOTINE_PLAYER</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_BIO</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_BIO</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>UTILITY BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+	</customStore>
+</store>
+
+
+
+	<!--------------------------------ship-unlocks----------------------------------->
+
+
+	<events>
+	<event name="TRUE_VICTORY_CREW_LEAH">
+		<unlockShip silent="false">PLAYER_SHIP_NEWTONBEAMA_3</unlockShip>
+    	</event>
+	</events>
+
+
+	<!--------------------------------races----------------------------------->
+
+
+<crew>
+	<race name="unique_thing_leah">
+		<noSlot>true</noSlot>
+		<noClone>true</noClone>
+		<essential>10</essential>
+		<canMan>false</canMan>
+		<canSuffocate>false</canSuffocate>
+		<canBurn>false</canBurn>
+		<snapToSlot>true</snapToSlot>
+		<teleportMoveOtherShip>true</teleportMoveOtherShip>
+		<maxHealth>100</maxHealth>
+		<allDamageTakenMultiplier>2</allDamageTakenMultiplier>
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>0.1</damageMultiplier>
+		<rangedDamageMultiplier>10</rangedDamageMultiplier>
+		<fireRepairMultiplier>2</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>0.25</sabotageSpeedMultiplier>
+		<isTelepathic>true</isTelepathic>
+		<resistsMindControl>true</resistsMindControl>
+		<isAnaerobic>true</isAnaerobic>
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<stunMultiplier>5</stunMultiplier>
+		<healSpeed>5.0</healSpeed>
+		<cloneSpeedMultiplier>20.0</cloneSpeedMultiplier>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+			<deathSound>engiDeath</deathSound>
+			<deathSound>mantisDeath</deathSound>
+			<deathSound>rockDeath</deathSound>
+			<deathSound>energyDeath</deathSound>
+			<deathSound>crystalDeath</deathSound>
+			<deathSound>shrikeDeath</deathSound>
+			<deathSound>humanDeathSpecial</deathSound>
+			<deathSound>coomerDeath1</deathSound>
+			<deathSound>coomerDeath2</deathSound>
+			<deathSound>coomerDeath3</deathSound>
+			<deathSound>coomerDeath4</deathSound>
+			<deathSound>technicianDroneDeath</deathSound>
+			<deathSound>femaleDeath1</deathSound>
+			<deathSound>femaleDeath2</deathSound>
+			<deathSound>femaleDeath3</deathSound>
+			<deathSound>horseDeath</deathSound>
+			<deathSound>orchidDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>silent</shootingSound>
+			<shootingSound>crewLaser</shootingSound>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+			<shootingSound>detectiveShoot1</shootingSound>
+			<shootingSound>detectiveShoot2</shootingSound>
+			<shootingSound>detectiveShoot3</shootingSound>
+			<shootingSound>vanceShoot</shootingSound>
+			<shootingSound>orchidShoot1</shootingSound>
+			<shootingSound>orchidShoot2</shootingSound>
+			<shootingSound>orchidShoot3</shootingSound>
+		</shootingSounds>
+		<repairSounds animSoundFrame="-1">
+			<repairSound>repair</repairSound>
+			<repairSound>rockThud1</repairSound>
+			<repairSound>rockThud2</repairSound>
+			<repairSound>rockThud3</repairSound>
+			<repairSound>shrikeRepair</repairSound>
+		</repairSounds>
+		<animBase>human</animBase>
+		<detectsLifeforms>true</detectsLifeforms>
+		<shootTimer min="750" max="1000"/>
+		<punchTimer min="200" max="300"/>
+		<skills>
+			<piloting req="1"/>
+			<engines req="1"/>
+			<shields req="1"/>
+			<weapons req="1"/>
+			<repair req="1"/>
+			<combat req="5"/>
+		</skills>
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<lowHealthThresholdPercentage>-1.0</lowHealthThresholdPercentage>
+		<defaultSkillLevel>2</defaultSkillLevel>
+		<cloneLoseSkills>false</cloneLoseSkills>
+		<damageEnemiesAmount>5</damageEnemiesAmount>
+		<powerDrain>1</powerDrain>
+		<powerDrainFriendly>true</powerDrainFriendly>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<passiveStatBoosts>
+			<statBoost name="healAmount">
+				<duration>3</duration>
+				<boostType>MAX</boostType>
+				<amount>10</amount>
+				<shipTarget>CREW_TARGET</shipTarget>
+				<crewTarget>ALL</crewTarget>
+				<priority>0</priority>
+			</statBoost>
+		</passiveStatBoosts>
+		<deathEffect>
+			<spawnCrew>
+				<race>unique_thing_leah</race>
+				<name>Leah?</name>
+				<number>1</number>
+				<healthPercentage>50</healthPercentage>
+				<noSlot>true</noSlot>
+			</spawnCrew>
+			<damage>0</damage>
+			<fireChance>0</fireChance>
+			<breachChance>0</breachChance>
+			<stunChance>100</stunChance>
+			<ion>0</ion>
+			<sysDamage>0</sysDamage>
+			<persDamage>0</persDamage>
+			<hullBust>false</hullBust>
+			<lockdown>false</lockdown>
+			<friendlyFire>true</friendlyFire>
+			<stun>1</stun>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			<roomStatBoosts>
+				<statBoost name="suffocationModifier">
+					<duration>5</duration>
+					<boostType>MULT</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>CURRENT_ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="fireDamageMultiplier">
+					<duration>5</duration>
+					<boostType>MULT</boostType>
+					<amount>0</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>CURRENT_ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+				<statBoost name="stunMultiplier">
+					<duration>5</duration>
+					<boostType>MULT</boostType>
+					<amount>0.2</amount>
+					<shipTarget>CURRENT_ROOM</shipTarget>
+					<crewTarget>CURRENT_ENEMIES</crewTarget>
+					<droneTarget>CREW</droneTarget>
+					<priority>0</priority>
+				</statBoost>
+			</roomStatBoosts>
+		</deathEffect>
+	</race>
+	<race name="unique_battery_leah">
+		<noSlot>true</noSlot>
+		<essential>10</essential>
+		<canFight>false</canFight>
+		<noAI>true</noAI>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canMan>false</canMan>
+		<canTeleport>false</canTeleport>
+		<canSuffocate>false</canSuffocate>
+		<suffocationModifier>0</suffocationModifier>
+		<canBurn>false</canBurn>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<stunMultiplier>0</stunMultiplier>
+		<validTarget>false</validTarget>
+		<canMove>false</canMove>
+		<snapToSlot>false</snapToSlot>
+		<maxHealth>10</maxHealth>
+		<allDamageTakenMultiplier>0</allDamageTakenMultiplier>
+		<moveSpeedMultiplier>0</moveSpeedMultiplier>
+		<repairSpeed>0</repairSpeed>
+		<damageMultiplier>0</damageMultiplier>
+		<bonusPower>5</bonusPower>
+		<rangedDamageMultiplier>0</rangedDamageMultiplier>
+		<resistsMindControl>true</resistsMindControl>
+		<deathSounds>
+			<deathSound>energyDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>silent</shootingSound>
+		</shootingSounds>
+		<repairSounds animSoundFrame="-1">
+			<repairSound>repair</repairSound>
+		</repairSounds>
+		<shootTimer min="1000" max="1300"/>
+		<punchTimer min="500" max="650"/>
+		<skills>
+			<piloting req="1"/>
+			<engines req="1"/>
+			<shields req="1"/>
+			<weapons req="1"/>
+			<repair req="1"/>
+			<combat req="1"/>
+		</skills>
+		<lowHealthThreshold>-1</lowHealthThreshold>
+		<lowHealthThresholdPercentage>-1.0</lowHealthThresholdPercentage>
+		<defaultSkillLevel>0</defaultSkillLevel>
+		<cloneLoseSkills>false</cloneLoseSkills>
+		<damageEnemiesAmount>2</damageEnemiesAmount>
+		<passiveStatBoosts>
+			<statBoost name="teleportMove">
+				<boostType>SET</boostType>
+				<value>TRUE</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>SELF</crewTarget>
+				<priority>10</priority>
+				<systemRoomTarget>NONE</systemRoomTarget>
+				<systemList>
+					<artillery/>
+				</systemList>
+			</statBoost>
+		</passiveStatBoosts>
+	</race>
+</crew>
+
+
+	<!--------------------------------rewards----------------------------------->
+
+<rewards>
+	<reward name="unlock_quest_leah_standard">
+		<resourceRewards>
+			<scrap level="LOW" min="700" max="800"/>
+			<scrap level="MED" min="1300" max="1550"/>
+			<scrap level="HIGH" min="1550" max="1800"/>
+			<fuel level="LOW" min="2" max="3"/>
+			<fuel level="MED" min="3" max="5"/>
+			<fuel level="HIGH" min="5" max="5"/>
+			<missiles level="LOW" min="2" max="3"/>
+			<missiles level="MED" min="3" max="5"/>
+			<missiles level="HIGH" min="5" max="5"/>
+			<droneparts level="LOW" min="2" max="3"/>
+			<droneparts level="MED" min="3" max="5"/>
+			<droneparts level="HIGH" min="5" max="5"/>
+		</resourceRewards>
+	
+		<reward minResources="4" maxResources="4">
+			<resource name="scrap"/>
+			<resource name="fuel"/>
+			<resource name="missiles"/>
+			<resource name="droneparts"/>
+		</reward>
+	</reward>
+</rewards>
+</FTL>

@@ -1,0 +1,433 @@
+<mod:findName type="event" name="SYLVAN_ROYAL_NORMAL">
+<mod:findLike type="choice" start="0" limit="1">
+<mod:findLike type="event">
+	<mod:findLike type="ship" start="0" limit="1">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod:findLike type="choice" start="0" limit="1">
+	<mod:findLike type="event">
+		<mod-append:ship load="SHIP_SYLVAN_NEMESIS"/>
+	</mod:findLike>
+	</mod:findLike>
+	<mod-append:choice req="LIST_CREW_LEAH" blue="true">
+		<text>Have Leah stand next to you while you respond to her hail.</text> 
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE"/>
+	</mod-append:choice>
+</mod:findLike>
+</mod:findLike>
+</mod:findName>
+
+
+<mod:findName type="event" name="SYLVAN_ROYAL_DEAD">
+	<mod:findLike type="ship" start="0" limit="1">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod:findLike type="choice" start="0" limit="1">
+	<mod:findLike type="event">
+		<mod-append:ship load="SHIP_SYLVAN_NEMESIS"/>
+	</mod:findLike>
+	</mod:findLike>
+	<mod-append:choice req="LIST_CREW_LEAH" blue="true">
+		<text>Have Leah stand next to you while you respond to her hail.</text> 
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="SYLVAN_ROYAL_LEAH_START_COMBAT">
+	<ship load="SHIP_SYLVAN_NEMESIS" hostile="true"/>
+	<event load="COMBAT_CHECK"/>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE">
+    <text>"No way. No way you did this. No way you found… ANOTHER LEAH? What about us? What about our rivalry, the most legendary rivalry to ever exist, and you found ANOTHER me? I thought we had something special, we've fought each other so many times, had so many amazing moments and you... you... you cheat on me!" Leah slams her fist down onto the table and leaps from her seat. "No more games, captain! Our rivalry is over, and only one of us is going to make it out of here alive! ..Ooh, but what if we both died at the same time, wouldn’t that make for such a cool and epic mo-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_2"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_2">
+    <text>"-ment? I mean, just think about it! Wouldn't it be so cool to have our legendary rivalry, which you ended, you beyatch, end with both of our deaths? Like one of those death-to-alien-races morality videos you see all the time, it'd be one of those epic themes about how violence is only sometimes the answer, and- Ooh! We can include one of those 'it's about the journey, not the reward'-type of deals as well! Don't you think that'd be such a fitting end to our rivalry, by the way, you're still a beyatch for that, since it spanned so long, we might as well include th-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_3"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_3">
+    <text>"-ose to wow our audiences. Wait, don't get me wrong, our rivalry wasn't for the fame, but it was such a long and legendary rivalry, we might as well share it, right? And so I'm thinking, when people hear about our rivalry, I want them to go 'wow, that was deep', you know? I mean, we both put so much effort into this, so I really want it to be fulfilling for both of us, except for you beyatch, you're still a beyatch, like beyatch, you replace ME? ME!? WITH ANOTHER LEAH!?" Leah slams her fist down onto the table again. And sits down to leap up from her seat again. "This is ridiculous! You can't ju-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_4"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_4">
+	<text>MU_BEAM_MASTER_OBELISK SYLVAN_ROYAL_LEAH_DIALOGUE_4_TEXT NOT FOUND at events_multiverse.xml.append: Ln 91, Col 2: System.xml.parse ERROR text not found, could not parse. Stack trace:
+1 - 0x6b09965a luaopen_Hyperspace
+2 - 0x6b4355e6 luaopen_RapidXML
+3 - 0x76b47580 malloc
+4 - 0x6b4358f2 luaopen_RapidXML
+5 - 0x6b3e891e luaopen_RapidXML
+6 - 0x6b1cf410 luaopen_Hyperspace
+7 - 0x6b4355e6 luaopen_RapidXML</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_5"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_5">
+	<text>wemq;er;ewr @/??el mwlremt@/11/,; ShipManager:GetWeaponsList():GetProjectile():21o3okwwmql lm#549504 mlwermm6#9i60456 public void Fire(Projectile projectile, std::Vector list) meeerkl3243 435qy123 567567l 321156756 mov ebx reg 12324 pop add 123312321, 2133 jg jle231lewrl NULL REFERENCE - ERROR CREATING EVENT</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_6"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_6">
+	<img back="BACK_EVENT_LEAHEVERYWHERE" planet="NONE"/>
+	<changeBackground>BACK_EVENT_LEAHEVERYWHERE</changeBackground>
+	<backgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH">
+		<layer z="999">front</layer>
+		<spawnArea x="400" y="188" w="0" h="0" center="true"/>
+		<anim>glitch_paradox_leah</anim>
+		<active>true</active>
+		<jumpClear>true</jumpClear>
+	</backgroundObject>
+	<playSound>glitch</playSound>
+	<triggeredEvent event="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH" time="1" clearOnJump="true"/>
+	<jumpEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH" loop="false" priority="0">SYLVAN_ROYAL_LEAH_CLEAR_GLITCH</jumpEvent>
+</event>
+
+<ship name="LEAH_BEAM_MASTER_OBELISK_PARADOX" auto_blueprint="LEAH_BEAM_MASTER_OBELISK_PARADOX">
+	<destroyed load="SYLVAN_ROYAL_LEAH_AFTER_CLEAR"/>
+	<deadCrew load="SYLVAN_ROYAL_LEAH_AFTER_CLEAR"/>
+</ship>
+<event name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH">
+	<clearJumpEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH"/>
+	<clearTriggeredEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH"/>
+	<clearBackgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH"/>
+	<text>"AAAHHHHH MY SHIP--" The comms go silent for a moment. "I mean, uh, beyatch, I know we've had our differences, what with you being a beyatch and all, but could ya help a rival out here? Some weirdo teleported onto my ship and turned my crew turned against me! The nerve! Not as annoying as you, though. So, um, I don't have a ship to go to. Err.. well, uh, alas, I seem to have no other choice but to go with you! Of course you'll make room for your rival, right?" Leah beams onto your ship. "Let's take out that beyatch!"</text>
+	<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMF</unlockCustomShip>
+	<crewMember amount="1" class="unique_leah_mfk">Leah</crewMember>
+	<ship load="LEAH_BEAM_MASTER_OBELISK_PARADOX" hostile="true"/>
+	<resetFtl/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR">
+	<recallBoarders ship="both"/>
+	<backgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH">
+		<layer z="999">front</layer>
+		<spawnArea x="400" y="188" w="0" h="0" center="true"/>
+		<anim>glitch_paradox_leah</anim>
+		<active>true</active>
+		<jumpClear>true</jumpClear>
+	</backgroundObject>
+	<playSound>glitch</playSound>
+	<triggeredEvent event="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH" time="1" clearOnJump="true"/>
+	<jumpEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH" loop="false" priority="0">SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH</jumpEvent>
+</event>
+
+
+<event name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH">
+	<clearJumpEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH"/>
+	<clearTriggeredEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH"/>
+	<changeBackground>BACK_EVENT_LEAHNOTHING</changeBackground>
+	<clearBackgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH"/>
+	<text>Leah's ship phases back into view, still destroyed, except this time it's Leah who hails you. The normal Leah, not whatever you just faced.</text>
+	<choice hidden="true" req="unique_leah_mfk" lvl="1" max_group="4" blue="false">
+		<text>Your Leah seems confused by all this, but shrugs and goes back to whatever they were doing.</text>
+		<event>
+		<loadEventList seeded="false" default="SYLVAN_ROYAL_WIN">
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="chaos_mode"/>
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="loc_sylvankilled"/>
+		</loadEventList>
+		</event>
+	</choice>
+	<choice hidden="true" req="unique_leah_mfk" lvl="0" max_group="4" blue="false">
+		<text>Continue...</text>
+		<event>
+		<loadEventList seeded="false" default="SYLVAN_ROYAL_WIN">
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="chaos_mode"/>
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="loc_sylvankilled"/>
+		</loadEventList>
+		</event>
+	</choice>
+</event>
+
+
+
+<event name="SYLVAN_PACKAGE_KYLE_OFFER">
+	<text>"Aaaaah." Sylvan chuckles upon seeing the package. "Yesss, I can ussse thisss. Let'sss sssee, your ssship could ussse an artillery. Honessstly ssspeaking, it could ussse two. How'sss, sssay, 100 ssscrap for one, and 175 ssscrap for two? Package included, of courssse."</text>
+	<choice>
+	<text>Install two artilleries.</text>
+	<event>
+		<text>"Good choice, ssstranger. Feel free to browssse while I work on your ssship, it'll be inssstalled by the time you're ready to jump."</text>
+		<item_modify>   
+			<item type="scrap" min="-175" max="-175"/>
+		</item_modify>
+		<remove name="LEAH_KYLE_PACKAGE"/>
+		<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>Sylvan finishes installing the Artillery onto your ship.</text>
+			<system name="artillery"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>After making some finishing touches to the first Artillery, Sylvan installs the second.</text>
+					<system name="artillery"/>
+					<choice hidden="true" req="SEC FINAL" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES_LASTSTAND</loadEvent>
+					</event>
+					</choice>
+					<choice hidden="true" req="SEC STANDARD_SPACE" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES_DROPPOINT</loadEvent>
+					</event>
+					</choice>
+					<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES</loadEvent>
+					</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+		</choice>
+	</event>
+	</choice>
+	<choice>
+	<text>Install one artillery.</text>
+	<event>
+		<text>"Good choice, ssstranger. Feel free to browssse while I work on your ssship, it'll be inssstalled by the time you're ready to jump."</text>
+		<item_modify>   
+			<item type="scrap" min="-100" max="-100"/>
+		</item_modify>
+		<remove name="LEAH_KYLE_PACKAGE"/>
+		<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>Sylvan finishes installing the Artillery onto your ship.</text>
+			<system name="artillery"/>
+			<choice hidden="true" req="SEC FINAL" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES_LASTSTAND</loadEvent>
+			</event>
+			</choice>
+			<choice hidden="true" req="SEC STANDARD_SPACE" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES_DROPPOINT</loadEvent>
+			</event>
+			</choice>
+			<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES</loadEvent>
+			</event>
+			</choice>
+		</event>
+		</choice>
+	</event>
+	</choice>
+	<choice hidden="true">
+	<text>Refuse the offer.</text>
+	<event>
+		<loadEvent>SYLVAN_PACKAGE_KYLE_REJECT</loadEvent>
+	</event>
+	</choice>
+</event>
+
+<event name="SYLVAN_PACKAGE_KYLE_REJECT">
+	<text>"Aaaaah. Maybe a different time then, ssstranger. I'm ccccertain thisss won't be the lassst we sssee each other."</text>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+		<loadEvent>SYLVAN_STANDARD</loadEvent>
+	</event>
+	</choice>
+</event>
+
+
+
+<event name="SYLVAN_PACKAGE_LEAH_STORE">
+	<store>STORE_SYLVAN_PACKAGE_LEAH</store>
+</event>
+
+<event name="SYLVAN_PACKAGE_LEAH_READY">
+	<text>"Aaaaah. Ssstranger ssstranger, your package isss ready."</text>
+	<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMB</unlockCustomShip>
+	<choice hidden="true">
+	<text>"YES! FINALLY!", you hear Leah scream.</text>
+	<event>
+		<loadEvent>SYLVAN_PACKAGE_LEAH_STORE</loadEvent>
+	</event>
+	</choice>
+</event>
+
+<event name="SYLVAN_PACKAGE_LEAH_NOTREADY">
+	<text>"Ssstranger, your package isssn't ready yet. Ssshop at a different time, perhapsss..." Upon hearing this, Leah humphs in response.</text>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<loadEvent>SYLVAN_STANDARD</loadEvent>
+	</event>
+	</choice>
+</event>
+
+
+<mod:findName type = "event" name = "SYLVAN_GIFT_LASTSTAND">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_DROPPOINT_GIFT">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_DROPPOINT_NOGIFT">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_STANDARD">
+<mod-append:choice req="LIST_CREW_LEAH" req="SEC FINAL" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>

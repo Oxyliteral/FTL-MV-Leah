@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+	<!--
+		CDATA tags mean no need to escape special characters.
+		Don't worry about spaces at the start/end. That gets trimmed.
+	-->
+	<!-- The title of this mod. -->
+	<title><![CDATA[Various Cruisers, All Courtesy of Your Nemesis]]></title>
+	<!--
+		This mod's thread on subsetgames.com.
+		If there's no thread yet, create one to announce your upcoming mod in the
+		forum. Then paste the url here.
+	-->
+	<threadUrl><![CDATA[Original Mod: https://ftlmultiverse.fandom.com/wiki/Addons_for_Multiverse#LEAH_GAMING]]></threadUrl>
+	<!-- Your forum user name. -->
+	<author><![CDATA[NewtonsFourth (Original Author) && Oxyliteral (Thief Author)]]></author>
+	<!--
+		The revision/variant of this release, preferably at least a number.
+		Examples:
+			0.3
+			2.1c Ships Only WIP
+			2.4.1 Hi-res Bkgs
+			1.0 for FTL 1.03.1
+	-->
+	<version><![CDATA[2.0 - First Release, May There Never Be a Second]]></version>
+	<description><![CDATA[Includes the original mod and a few extras. Namely, Sylvan interactions and a few ships. Don't expect this to be balanced, that's not what this is here for; rather, it is here for BEAM.
+
+To list each unlock condition, there's one for mainly every Leah interaction in the game (see, the joke here is that there aren't actually that many, so I had to make a few new ones), barring whatever I forgot about. That is to say, they are:
+-Bringing Leah to see her brother in the Duskbringer sector.
+-Bringing Leah to see the MFK version of herself.
+-Bringing Leah to Node 17 Sylvan (New!)
+-Bringing a Tiny Bug along with Leah to destroy either phase 1 or 2 of the Node 17 Flagship (New!)
+
+The rest can be unlocked through winning with and/or unlocking the former ships.
+
+As for mod compatibility, it shouldn't have any troubles. It might have a few issues with weapons/augments breaking due to the editing of 'bFiredOnce' and 'lastProjectileId', but I don't think many mods use those, so who knows. It also might have a few room image problems due to other mods overwriting, but nothing game-breaking.
+No preferred order, or requirements! Other than MV and Hyperspace, of course.
+
+
+
+P.S. there's a bug in Leah's teleporting involved with 'back to station' commands. I don't know if I can even fix it, and I don't think Leah was ever intended to be a player character, so the bug is here to stay, lmao.
+P.P.S there's another bug in one of the ship's crew's pathing. I had no idea why it was happening (room layouts?), so I just went with it, lmao.
+
+
+
+Also, I'm going to rant about lua. This is not important, skip this if you want to. That one reverse-chain pre-flak weapon took way too long to do. I spent like 5 hours just to get a prototype that worked, since modifying the cooldownModifier would cause render issues with the charge bars. I eventually had to settle for baseCooldown. Even then, despite all my efforts, it failed. Oh, don't get me wrong, the boost and cooldown worked fine, but you were able to just de-power the weapon and get an instant-charge weapon back. So I had to do this weird conglomeration of shenanigans. And boy, was that annoying.
+
+And then apparently if you set a negative cooldown as a boost, it won't trigger upon the weapon shooting, but it WILL TRIGGER if you set the boost level as soon as the weapon is powered. Another headache to add to the pile. Adding on to that, there really isn't a reasonable way to check if an enemy ship is present or not. For some reason Hyperspace.ships.enemy.bDestroyed wasn't accurate, so I had to go into the ship object itself, which has another bDestroyed variable?? Of course, half of the booleans are apparently null or false seemingly no matter what,
+and I'm pretty sure it's actually impossible to tell if an enemy ship has surrendered with only the ShipManager class. After some fiddling around on the Github, apparently you can access WorldManager through CApp. From then on, you have access to actual methods and variables, so it's an easy implementation.
+
+..At least, that's what I would say, but CompleteShip isn't exposed for lua. So, uh, back to the drawing board. Eventually I rooted out my old code, and just went 'who needs surrendering?' and made it check upon your ship jumping.
+
+
+
+Whatever you might say about my amateur-ness, for me this was a, uh, "learning process". As in, learning how to procrastinate. 10/10, would do again.]]></description>
+	<!--
+		Suggestions for the description...
+
+		Write a short paragraph about the mod's effect first (what style ship, how
+		does it affect gameplay). No need to introduce yourself.
+
+		Optionally add a paragraph of background flavor.
+
+		Optionally list important features.
+
+		List any concerns about mod compatibility, preferred order, or requirements.
+
+		Mention "Replaces the XYZ ship." if relevant.
+			Kestrel-A, Engi-A, Fed-A, Zoltan-A,
+			Stealth-A, Rock-A, Slug-A, Mantis-A,
+			Lanius-A, Crystal-A
+
+		Above all, keep the description general, so you won't have to edit
+		that again for each new version.
+	-->
+</metadata>
+

@@ -1,0 +1,53 @@
+<mod:findName type="event" name="DUSKCAP_PISSED_QUEST">
+	<mod-append:choice hidden="true" req="LIST_CREW_LEAH" lvl="1" max_group="3" blue="true">
+                <text>(Leah) Have Leah with you when you hail the Rebels.</text>
+		<event load="UNLOCK_QUEST_KYLE"/>
+	</mod-append:choice>
+	<mod:findWithChildLike type="choice" child-type="text">
+		<mod:selector>Hail the Rebels.</mod:selector>
+		<mod:setAttributes req="pilot" lvl="1" max_group="6" blue="false"/>
+	</mod:findWithChildLike>
+</mod:findName>
+
+<event name="UNLOCK_QUEST_KYLE">
+        <text>"NOW WHO MIGHT THIS BE?! WHY, IT CAN'T B- SIS!? WHAT'RE YOU DOING WITH THIS LITTLE SHIT!? DID YOU GET TIRED OF GETTING BLOWN UP?" He pauses for a moment. "HOLD ON, I FORGOT TO INTRODUCE MYSELF TO THE LITTLE SHIT. DO YOU KNOW WHO I AM? I AM KICK YOUR ASS KYLE, AND I BET YOU CAN GUESS WHAT I'M GOING TO DO TO YOU!" "IN CASE YOU'RE STUPID, I'LL EXPLAIN IT. I'M GOING TO KICK-" You mute him while you decide what to do.</text>
+        <choice hidden="true">
+		<text>Let Leah do the talking.</text>
+		<event>
+			<text>You unmute Kyle and leave them to talk. With snippets such as "I know, right!? My rival's such an ass! They never let their shields down for me!" and "They never let me near the stores, and they keep buying non-beam weapons! If it were me, I'd spend everything on those beams!", Kyle looks like he's regretting this more and more with every passing word.
+
+			When a Duskbringer carrier jumps into the system, Kyle fiddles with the communications a bit before shouting "ALRIGHT! ALRIGHT! I SURRENDER! PLEASE! SHUT UP!"</text>
+               		<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Although Kyle's crew rebels against their captain, Kyle and his crew are eventually taken into the Duskbringer's custody, albeit not without a few explosion-related casualties. Afterwards, you receive a hail from the same Duskbringer as before. "I told you to kill them, did I not?" He sighs. "While unorthodox, I see you did sufficient work, and now this neanderthal will finally be gone from this sector. You upheld your job... for the most part... and so I shall uphold mine."</text>
+					<crewMember amount="1" class="zoltan_martyr" all_skills="1">Redin</crewMember>
+					<choice hidden="true">
+						<text>Salvage Kyle's ship.</text>
+						<event>
+							<text>The ship, roughened up from all the fighting, is mostly ruined. "Hold on! Kyle once remarked to me about a secret compartment for his 'greatest plan yet'. Should be somewhere here..." The two of you decapitate a 'Kick Your Ass Trophy', and find blueprints for a 'Kick Your Ass Three Times Over' ship!
+
+							While the rest of the ship renders unfruitful, you can still scrap the ship. In the midst of doing so, Leah comes up to you. "Hey, so, now that Kyle's gone.. I, er, don't have anyone to complain about you with. So can I, y'know, complain to you about you?"</text>
+							<unlockCustomShip>PLAYER_SHIP_NEWTONBEAME</unlockCustomShip>
+							<autoReward level="HIGH">standard</autoReward>
+							<choice hidden="true">
+								<text>Shake your head.</text><event></event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+        <choice hidden="true">
+                <text>Shoot him dead.</text>
+                <event>
+                    <text>You briefly unmute Kyle, but after a long string of explicit insults you mute him for the remainder of the fight and prepare to attack. Leah shrugs. "I never really liked him anyways."</text>
+                    <ship hostile="true"/>
+                    <choice hidden="true">
+                        <text>Continue...</text>
+                        <event load="COMBAT_CHECK"/>
+                    </choice>
+                </event>
+	</choice>
+</event>

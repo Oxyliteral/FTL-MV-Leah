@@ -1,0 +1,8 @@
+﻿<FTL>
+<imageList name="BACK_EVENT_LEAHEVERYWHERE">
+	<img w="1280" h="720">stars_special/bg_leaheverywhere.png</img>
+</imageList>
+<imageList name="BACK_EVENT_LEAHNOTHING">
+	<img w="1280" h="720">stars_special/bg_leahnothing.png</img>
+</imageList>
+</FTL>
