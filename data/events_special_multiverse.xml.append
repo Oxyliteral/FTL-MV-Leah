@@ -1,0 +1,653 @@
+<mod:findName type = "event" name = "NEMESIS_ENCOUNTER">
+	<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+	<text>(Leah) Use Leah to hail the ship.</text>
+	<event load="LEAH_NEMESIS_LEAH"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="LEAH_NEMESIS_LEAH">
+	<loadEventList seeded="true" generate="true">
+		<event name="LEAH_LIST_NEMESIS_LEAH"/>
+	</loadEventList>
+</event>
+
+<eventList name="LEAH_LIST_NEMESIS_LEAH">
+	<event load="LEAH_NEMESIS_LEAH_MIMIC"/>
+	<event load="LEAH_NEMESIS_LEAH_WHO_IS_WHO"/>
+	<event load="LEAH_NEMESIS_LEAH_CREW"/>
+	<event load="LEAH_NEMESIS_LEAH_CREW"/>
+	<event load="LEAH_NEMESIS_LEAH_WEAPON"/>
+	<event load="LEAH_NEMESIS_LEAH_WEAPON"/>
+	<event load="LEAH_NEMESIS_LEAH_SCRAP"/>
+	<event load="LEAH_NEMESIS_LEAH_SCRAP"/>
+</eventList>
+
+<event name="LEAH_NEMESIS_LEAH_MIMIC" unique="true">
+	<ship load="SHIP_NEMESIS" hostile="true"/>
+	<text>The captain hails you, revealing themselves to have obnoxiously bright blue hair and a smug glare. "Didn't expect to see m- wait, WHAT!? That's me!? I'm on your ship, but I haven't even teleported over yet!" The rebel ship's communications go blank, but then you hear a 'FWOOP' as their captain teleports onto your ship. Right next to you, in fact.
+
+"WHAT THE HELL, BEYATCH!? WHY do you have a copy of m-", She stops suddenly. Both Leahs push you out of the room. The door shuts behind you. You hear no noise, only silence.</text>
+	<choice hidden="true">
+		<text>Open the door.</text>
+		<event>
+			<text>Leah is standing in the middle of the room. She stares at you, unblinking, silent, with an unnatural smile on her face. The other Leah is nowhere to be found.</text>
+			<choice>
+				<text>Trade. Leah. Offer. Sacrifice. Beam. Special. Stock.</text>
+				<event>
+					<text>ACCORD. MADE.</text>
+					<metaVariable name="prof_leah_deaths" op="add" val="1"/>
+					<variable name="loc_nemesis" op="set" val="1"/>
+					<removeCrew class="unique_leah">
+						<clone>false</clone>
+						<text></text>
+					</removeCrew>
+					<weapon name="LEAH_LIST_WEAPONS_BEAM_SPECIAL"/>
+					<ship hostile="false"/>
+					<choice hidden="true">
+						<text>Continue...</text><event/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>NO NO NO NO NO NO.</text>
+				<event>
+					<text>You blink and suddenly the other Leah is there, clutching a hand to her chest.
+					
+"Damn you, Federation scum! This isn't the last you've seen of me! You beyatch and your little beyatch better watch your backs because I'm coming for you! Mwahahahah!"
+
+She laughs before warping away. Evidently, your Leah won the fight!</text>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event>
+							<text>Without their leader, the rebel ship is easy pickings, and easy scrap.</text>
+							<ship hostile="false"/>
+							<weapon name="LOOT_KNIGHT_1"/>
+							<metaVariable name="prof_leah_deaths" op="add" val="1"/>
+							<variable name="loc_nemesis" op="set" val="1"/>
+							<choice>
+								<text>Continue...</text><event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+        </event>
+	</choice>
+</event>
+
+<event name="LEAH_NEMESIS_LEAH_WHO_IS_WHO" unique="true">
+	<ship load="SHIP_NEMESIS" hostile="true"/>
+	<text>The captain hails you, revealing themselves to have obnoxiously bright blue hair and a smug glare. "Didn't expect to see m- wait, WHAT!? That's me!? I'm on your ship, but I haven't even teleported over yet!" The rebel ship's communications go blank, but then you hear a 'FWOOP' as their captain teleports onto your ship. Right next to you, in fact.
+
+"WHAT THE HELL, BEYATCH!? WHY do you have a copy of me on your ship!?" is what you think she is trying to say, but its hard to tell over the shouting of Leah, who is also next to you.
+"I didn't replace YOU with a copy of yourself, who the HELL do you think you are!?",
+"Don't try to invade on MY rival, beyatch, I've had to endure days of poor cruiser management, and there's no way I'm going to lose my rival for something like this!", is what you hear before swiftly retreating out of the room.
+
+The muffled shouting leaks through the door, until eventually, it stops. Both Leahs come out, worse for the wear.
+
+"Beyatch, I'm your rival, ditch this beyatch so we can get on with our rivalry!"</text>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>"I'm the real Leah, beyatch!", "No, beyatch, I'm the real Leah, beyatch!", "Ugh! We'll never end this if you keep lying like that, beyatch!",
+				
+"Wait! I know! Beyatch, remember that time you shut off my ship with an EMP field using that shield generator's reactor? Now you know she's the beyatch!", "Oh come on, Delta-Base 9T-83, that one is public information! Beyatch, remember when I bought all those missiles but forgot to buy ammo for them? Now that's something the beyatch would never know!"
+				
+"Yeah, and your drones as well!", Leah rolls her eyes. "The Lanius! Remember when they dismantled my ship's oxygen and then I told you to help me and you did, but you also destroyed my ship in the process, you beyatch?!", "The Swarmlands! I remember bringing the Lanius from the Swarmlands! I also remember telling you to kill yourself, why didn't you listen to me, beyatch? We wouldn't be having this problem if you had!"
+
+Both Leahs recount various adventures that you don't remember, from stories about Prodigy 43-A to failures in hacking an ASB. Ditching all her weapons for hacking, for 'advanced boarding drones', investing in 'fake mind reading', exactly 22 spiders (you killed them all, you monster beyatch!), accidental FTL drives, encounters with her 'bestie' Jerry, the list goes on and on.</text>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>"Even that time in Chaos mode where you tried to cheat through console commands by inputting my NEMESIS_ENCOUNTER_CHAOS event, haha, I bet you never thought it would just lead to the same old fight, beyatch!"</text>
+					<choice hidden="true">
+						<text>Wait, what?</text>
+						<event>
+							<text>"Oh, for beyatch sake! Remember that time you flirted with me, showing me your big ass Beam! You told me you were madly in love with me! I know I said it would never work out, and it still won't, but I'll make a concession and call you my best (and only) rival! So declare me as your one and only rival and get rid of this beyatch!"
+
+"What!? I would never bring that up willingly! Its an affront to our rivalry! That's how you know she's the beyatch! Declare ME as your one and only rival and get rid of this beyatch!"
+
+Both Leahs implore you. It seems you must choose the right one.</text>
+							<choice hidden="true">
+								<text>Shoot Leah.</text>
+								<event load="LEAH_NEMESIS_LEAH_WHO_IS_WHO_CONCLUSION"/>
+							</choice>
+							<choice hidden="true">
+								<text>Shoot Leah.</text>
+								<event load="LEAH_NEMESIS_LEAH_WHO_IS_WHO_CONCLUSION"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+        </event>
+	</choice>
+</event>
+
+<event name="LEAH_NEMESIS_LEAH_WHO_IS_WHO_CONCLUSION" unique="true">
+	<text>"Gah... You'll pay for this, Federation scum! Our rivalry is not over, will never, ever be over! Not in a million, a billion, a BEYATCH-ILLION years!"
+
+Clutching a hand to her chest, Leah warps away. Without their leader, the rebel ship is easy pickings, and easy scrap.</text>
+	<metaVariable name="prof_leah_deaths" op="add" val="1"/>
+	<variable name="loc_nemesis" op="set" val="1"/>
+	<ship hostile="false"/>
+	<autoReward level="MED">leah_reward_special</autoReward>
+	<weapon name="BEAM_1"/>
+	<choice hidden="true">
+		<text>Continue...</text><event/>
+	</choice>
+</event>
+
+<event name="LEAH_NEMESIS_LEAH_CREW" unique="true">
+	<ship load="SHIP_NEMESIS" hostile="true"/>
+	<text>The captain hails you, revealing themselves to have obnoxiously bright blue hair and a smug glare. "Didn't expect to see m- wait, WHAT!? That's me!? I'm on your ship, but I haven't even teleported over yet!" The rebel ship's communications go blank, but then you hear a 'FWOOP' as their captain teleports onto your ship. Right next to you, in fact.
+
+"WHAT THE HELL, BEYATCH!? WHY do you have a copy of me on your ship!?" is what you think she is trying to say, but its hard to tell over the shouting of Leah, who is also next to you.
+"I didn't replace YOU with a copy of yourself, who the HELL do you think you are!?",
+"Don't try to invade on MY rival, beyatch, I've had to endure days of poor cruiser management, and there's no way I'm going to lose my rival for something like this!", is what you hear before swiftly retreating out of the room.
+
+The muffled shouting leaks through the door, until eventually, it stops. Both Leahs come out, worse for the wear.
+
+"Beyatch, in my infinite wisdom, I've decided to join your ship! You clearly need the help, and there's no way you can beat me while you're suffering from your.. mental issues. I know, I know, you must have missed our rivalry every hour, but an exact lookalike of me?" She shakes her head. "Shut up, beyatch, and give me access to the storage hold! We've got beams to buy, beyatch!"</text>
+	<crewMember amount="1" class="unique_leah" all_skills="0">Leah</crewMember>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+            <text>The rebels say a tearful (?) goodbye to their leader, but not before presenting her with a gift of some scrap!</text>
+            <ship hostile="false"/>
+			<autoReward level="LOW">leah_reward_special</autoReward>
+            <choice>
+                <text>Continue...</text><event/>
+            </choice>
+        </event>
+	</choice>
+</event>
+
+<event name="LEAH_NEMESIS_LEAH_WEAPON" unique="true">
+	<ship load="SHIP_NEMESIS" hostile="true"/>
+	<text>The captain hails you, revealing themselves to have obnoxiously bright blue hair and a smug glare. "Didn't expect to see m- wait, WHAT!? That's me!? I'm on your ship, but I haven't even teleported over yet!" The rebel ship's communications go blank, but then you hear a 'FWOOP' as their captain teleports onto your ship. Right next to you, in fact.
+
+"WHAT THE HELL, BEYATCH!? WHY do you have a copy of me on your ship!?" is what you think she is trying to say, but its hard to tell over the shouting of Leah, who is also next to you. Its hard to tell which one instigated the fight, but before you know it, they're swinging at each other. They both teleport away, and you hear a commotion somewhere else on the ship. And another, elsewhere. And then another.
+
+Apparently, their fight is happening all over the ship. Even if you wanted to, its nigh impossible to interfere: the moment you turn towards them, they've already teleported somewhere else. One of the Leahs eventually acquiesces, clutching a hand to her chest.
+
+"Damn you, Federation scum! This isn't the last you've seen of me! You beyatch and your little beyatch better watch your backs because I'm coming for you! Mwahahahah!"
+
+She laughs before warping away. Evidently, your Leah won the fight!</text>
+	<metaVariable name="prof_leah_deaths" op="add" val="1"/>
+	<variable name="loc_nemesis" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+            <text>Without their leader, the rebel ship is easy pickings, and easy scrap.</text>
+            <ship hostile="false"/>
+			<autoReward level="LOW">leah_reward_special</autoReward>
+			<weapon name="SHOP_ITEM_SYLVAN_BEAM_STANDARD"/>
+            <choice>
+                <text>Continue...</text><event/>
+            </choice>
+        </event>
+	</choice>
+</event>
+
+<event name="LEAH_NEMESIS_LEAH_SCRAP" unique="true">
+	<ship load="SHIP_NEMESIS" hostile="true"/>
+	<text>The captain hails you, revealing themselves to have obnoxiously bright blue hair and a smug glare. "Didn't expect to see m- wait, WHAT!? That's me!? I'm on your ship, but I haven't even teleported over yet!" The rebel ship's communications go blank, but then you hear a 'FWOOP' as their captain teleports onto your ship. Right next to you, in fact.
+
+"WHAT THE HELL, BEYATCH!? WHY do you have a copy of me on your ship!?" is what you think she is trying to say, but its hard to tell over the shouting of Leah, who is also next to you. Its hard to tell which one instigated the fight, but before you know it, they're swinging at each other. They both teleport away, and you hear a commotion somewhere else on the ship. And another, elsewhere. And then another.
+
+Apparently, their fight is happening all over the ship. Even if you wanted to, its nigh impossible to interfere: the moment you turn towards them, they've already teleported somewhere else. One of the Leahs eventually acquiesces, clutching a hand to her chest.
+
+"Damn you, Federation scum! This isn't the last you've seen of me! You beyatch and your little beyatch better watch your backs because I'm coming for you! Mwahahahah!"
+
+She laughs before warping away. Evidently, your Leah won the fight!</text>
+	<metaVariable name="prof_leah_deaths" op="add" val="1"/>
+	<variable name="loc_nemesis" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+            <text>Without their leader, the rebel ship is easy pickings, and easy scrap.</text>
+            <ship hostile="false"/>
+			<autoReward level="LOW">leah_reward_special</autoReward>
+			<weapon name="SHOP_ITEM_SYLVAN_BEAM_STANDARD"/>
+            <choice>
+                <text>Continue...</text><event/>
+            </choice>
+        </event>
+	</choice>
+</event>
+
+
+<mod:findName type="event" name="SYLVAN_ROYAL_NORMAL">
+<mod:findLike type="choice" start="0" limit="1">
+<mod:findLike type="event">
+	<mod:findLike type="ship" start="0" limit="1">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod:findLike type="choice" start="0" limit="1">
+	<mod:findLike type="event">
+		<mod-append:ship load="SHIP_SYLVAN_NEMESIS"/>
+	</mod:findLike>
+	</mod:findLike>
+	<mod-append:choice req="LIST_CREW_LEAH" blue="true">
+		<text>Have Leah stand next to you while you respond to her hail.</text> 
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE"/>
+	</mod-append:choice>
+</mod:findLike>
+</mod:findLike>
+</mod:findName>
+
+
+<mod:findName type="event" name="SYLVAN_ROYAL_DEAD">
+	<mod:findLike type="ship" start="0" limit="1">
+		<mod:removeTag />
+	</mod:findLike>
+	<mod:findLike type="choice" start="0" limit="1">
+	<mod:findLike type="event">
+		<mod-append:ship load="SHIP_SYLVAN_NEMESIS"/>
+	</mod:findLike>
+	</mod:findLike>
+	<mod-append:choice req="LIST_CREW_LEAH" blue="true">
+		<text>Have Leah stand next to you while you respond to her hail.</text> 
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE"/>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="SYLVAN_ROYAL_LEAH_START_COMBAT">
+	<ship load="SHIP_SYLVAN_NEMESIS" hostile="true"/>
+	<event load="COMBAT_CHECK"/>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE">
+    <text>"No way. No way you did this. No way you found… ANOTHER LEAH? What about us? What about our rivalry, the most legendary rivalry to ever exist, and you found ANOTHER me? I thought we had something special, we've fought each other so many times, had so many amazing moments and you... you... you cheat on me!" Leah slams her fist down onto the table and leaps from her seat. "No more games, captain! Our rivalry is over, and only one of us is going to make it out of here alive! ..Ooh, but what if we both died at the same time, wouldn’t that make for such a cool and epic mo-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_2"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_2">
+    <text>"-ment? I mean, just think about it! Wouldn't it be so cool to have our legendary rivalry, which you ended, you beyatch, end with both of our deaths? Like one of those death-to-alien-races morality videos you see all the time, it'd be one of those epic themes about how violence is only sometimes the answer, and- Ooh! We can include one of those 'it's about the journey, not the reward'-type of deals as well! Don't you think that'd be such a fitting end to our rivalry, by the way, you're still a beyatch for that, since it spanned so long, we might as well include th-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_3"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_3">
+    <text>"-ose to wow our audiences. Wait, don't get me wrong, our rivalry wasn't for the fame, but it was such a long and legendary rivalry, we might as well share it, right? And so I'm thinking, when people hear about our rivalry, I want them to go 'wow, that was deep', you know? I mean, we both put so much effort into this, so I really want it to be fulfilling for both of us, except for you beyatch, you're still a beyatch, like beyatch, you replace ME? ME!? WITH ANOTHER LEAH!?" Leah slams her fist down onto the table again. And sits down to leap up from her seat again. "This is ridiculous! You can't ju-"</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_4"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_4">
+	<text>MU_BEAM_MASTER_OBELISK SYLVAN_ROYAL_LEAH_DIALOGUE_4_TEXT NOT FOUND at events_multiverse.xml.append: Ln 91, Col 2: System.xml.parse ERROR text not found, could not parse. Stack trace:
+1 - 0x6b09965a luaopen_Hyperspace
+2 - 0x6b4355e6 luaopen_RapidXML
+3 - 0x76b47580 malloc
+4 - 0x6b4358f2 luaopen_RapidXML
+5 - 0x6b3e891e luaopen_RapidXML
+6 - 0x6b1cf410 luaopen_Hyperspace
+7 - 0x6b4355e6 luaopen_RapidXML</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_5"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_5">
+	<text>wemq;er;ewr @/??el mwlremt@/11/,; ShipManager:GetWeaponsList():GetProjectile():21o3okwwmql lm#549504 mlwermm6#9i60456 public void Fire(Projectile projectile, std::Vector list) meeerkl3243 435qy123 567567l 321156756 mov ebx reg 12324 pop add 123312321, 2133 jg jle231lewrl NULL REFERENCE - ERROR CREATING EVENT</text>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Close communications and charge your weapons.</text>
+		<event load="SYLVAN_ROYAL_LEAH_START_COMBAT"/>
+	</choice>
+	<choice hidden="true">
+		<text>Continue listening.</text>
+		<event load="SYLVAN_ROYAL_LEAH_DIALOGUE_6"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_DIALOGUE_6">
+	<img back="BACK_EVENT_LEAHEVERYWHERE" planet="NONE"/>
+	<changeBackground>BACK_EVENT_LEAHEVERYWHERE</changeBackground>
+	<backgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH">
+		<layer z="999">front</layer>
+		<spawnArea x="400" y="188" w="0" h="0" center="true"/>
+		<anim>glitch_paradox_leah</anim>
+		<active>true</active>
+		<jumpClear>true</jumpClear>
+	</backgroundObject>
+	<playSound>glitch</playSound>
+	<triggeredEvent event="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH" time="1" clearOnJump="true"/>
+	<jumpEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH" loop="false" priority="0">SYLVAN_ROYAL_LEAH_CLEAR_GLITCH</jumpEvent>
+</event>
+
+<ship name="LEAH_BEAM_MASTER_OBELISK_PARADOX" auto_blueprint="LEAH_BEAM_MASTER_OBELISK_PARADOX">
+	<destroyed load="SYLVAN_ROYAL_LEAH_AFTER_CLEAR"/>
+	<deadCrew load="SYLVAN_ROYAL_LEAH_AFTER_CLEAR"/>
+</ship>
+<event name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH">
+	<clearJumpEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH"/>
+	<clearTriggeredEvent name="SYLVAN_ROYAL_LEAH_CLEAR_GLITCH"/>
+	<clearBackgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH"/>
+	<text>"AAAHHHHH MY SHIP--" The comms go silent for a moment. "I mean, uh, beyatch, I know we've had our differences, what with you being a beyatch and all, but could ya help a rival out here? Some weirdo teleported onto my ship and turned my crew turned against me! The nerve! Not as annoying as you, though. So, um, I don't have a ship to go to. Err.. well, uh, alas, I seem to have no other choice but to go with you! Of course you'll make room for your rival, right?" Leah beams onto your ship. "Let's take out that beyatch!"</text>
+	<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMF</unlockCustomShip>
+	<crewMember amount="1" class="unique_leah_mfk">Leah</crewMember>
+	<ship load="LEAH_BEAM_MASTER_OBELISK_PARADOX" hostile="true"/>
+	<resetFtl/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<event name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR">
+	<recallBoarders ship="both"/>
+	<backgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH">
+		<layer z="999">front</layer>
+		<spawnArea x="400" y="188" w="0" h="0" center="true"/>
+		<anim>glitch_paradox_leah</anim>
+		<active>true</active>
+		<jumpClear>true</jumpClear>
+	</backgroundObject>
+	<playSound>glitch</playSound>
+	<triggeredEvent event="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH" time="1" clearOnJump="true"/>
+	<jumpEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH" loop="false" priority="0">SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH</jumpEvent>
+</event>
+
+
+<event name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH">
+	<clearJumpEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH"/>
+	<clearTriggeredEvent name="SYLVAN_ROYAL_LEAH_AFTER_CLEAR_GLITCH"/>
+	<changeBackground>BACK_EVENT_LEAHNOTHING</changeBackground>
+	<clearBackgroundObject name="UNLOCK_QUEST_LEAH_PARADOX_GLITCH"/>
+	<text>Leah's ship phases back into view, still destroyed, except this time it's Leah who hails you. The normal Leah, not whatever you just faced.</text>
+	<choice hidden="true" req="unique_leah_mfk" lvl="1" max_group="4" blue="false">
+		<text>Your Leah seems confused by all this, but shrugs and goes back to whatever they were doing.</text>
+		<event>
+		<loadEventList seeded="false" default="SYLVAN_ROYAL_WIN">
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="chaos_mode"/>
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="loc_sylvankilled"/>
+		</loadEventList>
+		</event>
+	</choice>
+	<choice hidden="true" req="unique_leah_mfk" lvl="0" max_group="4" blue="false">
+		<text>Continue...</text>
+		<event>
+		<loadEventList seeded="false" default="SYLVAN_ROYAL_WIN">
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="chaos_mode"/>
+			<event name="SYLVAN_ROYAL_WIN_DEAD" req="loc_sylvankilled"/>
+		</loadEventList>
+		</event>
+	</choice>
+</event>
+
+
+
+<event name="SYLVAN_PACKAGE_KYLE_OFFER">
+	<text>"Aaaaah." Sylvan chuckles upon seeing the package. "Yesss, I can ussse thisss. Let'sss sssee, your ssship could ussse an artillery. Honessstly ssspeaking, it could ussse two. How'sss, sssay, 100 ssscrap for one, and 175 ssscrap for two? Package included, of courssse."</text>
+	<choice>
+	<text>Install two artilleries.</text>
+	<event>
+		<text>"Good choice, ssstranger. Feel free to browssse while I work on your ssship, it'll be inssstalled by the time you're ready to jump."</text>
+		<item_modify>   
+			<item type="scrap" min="-175" max="-175"/>
+		</item_modify>
+		<remove name="LEAH_KYLE_PACKAGE"/>
+		<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>Sylvan finishes installing the Artillery onto your ship.</text>
+			<system name="artillery"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>After making some finishing touches to the first Artillery, Sylvan installs the second.</text>
+					<system name="artillery"/>
+					<choice hidden="true" req="SEC FINAL" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES_LASTSTAND</loadEvent>
+					</event>
+					</choice>
+					<choice hidden="true" req="SEC STANDARD_SPACE" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES_DROPPOINT</loadEvent>
+					</event>
+					</choice>
+					<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
+					<text>See what he's offering.</text>
+					<event>
+						<loadEvent>SYLVAN_TRADES</loadEvent>
+					</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+		</choice>
+	</event>
+	</choice>
+	<choice>
+	<text>Install one artillery.</text>
+	<event>
+		<text>"Good choice, ssstranger. Feel free to browssse while I work on your ssship, it'll be inssstalled by the time you're ready to jump."</text>
+		<item_modify>   
+			<item type="scrap" min="-100" max="-100"/>
+		</item_modify>
+		<remove name="LEAH_KYLE_PACKAGE"/>
+		<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>Sylvan finishes installing the Artillery onto your ship.</text>
+			<system name="artillery"/>
+			<choice hidden="true" req="SEC FINAL" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES_LASTSTAND</loadEvent>
+			</event>
+			</choice>
+			<choice hidden="true" req="SEC STANDARD_SPACE" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES_DROPPOINT</loadEvent>
+			</event>
+			</choice>
+			<choice hidden="true" req="pilot" lvl="1" max_group="1" blue="false">
+			<text>See what he's offering.</text>
+			<event>
+				<loadEvent>SYLVAN_TRADES</loadEvent>
+			</event>
+			</choice>
+		</event>
+		</choice>
+	</event>
+	</choice>
+	<choice hidden="true">
+	<text>Refuse the offer.</text>
+	<event>
+		<loadEvent>SYLVAN_PACKAGE_KYLE_REJECT</loadEvent>
+	</event>
+	</choice>
+</event>
+
+<event name="SYLVAN_PACKAGE_KYLE_REJECT">
+	<text>"Aaaaah. Maybe a different time then, ssstranger. I'm ccccertain thisss won't be the lassst we sssee each other."</text>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+		<loadEvent>SYLVAN_STANDARD</loadEvent>
+	</event>
+	</choice>
+</event>
+
+
+
+<event name="SYLVAN_PACKAGE_LEAH_STORE">
+	<store>STORE_SYLVAN_PACKAGE_LEAH</store>
+</event>
+
+<event name="SYLVAN_PACKAGE_LEAH_READY">
+	<text>"Aaaaah. Ssstranger ssstranger, your package isss ready."</text>
+	<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMB</unlockCustomShip>
+	<choice hidden="true">
+	<text>"YES! FINALLY!", you hear Leah scream.</text>
+	<event>
+		<loadEvent>SYLVAN_PACKAGE_LEAH_STORE</loadEvent>
+	</event>
+	</choice>
+</event>
+
+<event name="SYLVAN_PACKAGE_LEAH_NOTREADY">
+	<text>"Ssstranger, your package isssn't ready yet. Ssshop at a different time, perhapsss..." Upon hearing this, Leah humphs in response.</text>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<loadEvent>SYLVAN_STANDARD</loadEvent>
+	</event>
+	</choice>
+</event>
+
+
+<mod:findName type = "event" name = "SYLVAN_GIFT_LASTSTAND">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_DROPPOINT_GIFT">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_DROPPOINT_NOGIFT">
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "SYLVAN_STANDARD">
+<mod-append:choice req="LIST_CREW_LEAH" req="SEC FINAL" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+<text>(Leah) Use Leah to hail Sylvan.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+</event>
+</mod-append:choice>
+<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
+<text>(Kyle's Package) Show Sylvan the package.</text>
+<event>
+	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
+</event>
+</mod-append:choice>
+<mod:findWithChildLike type="choice" child-type="text">
+<mod:selector>Decline his offer.</mod:selector>
+<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
+</mod:findWithChildLike>
+</mod:findName>

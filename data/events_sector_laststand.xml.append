@@ -1,0 +1,146 @@
+<mod:findName type="event" name="TRUE_LAST_STAND_START">
+    <mod:findLike type="choice">
+        <mod:findLike type="event">
+            <mod-append:choice hidden="true" max_group="1" req="LEAH_SHIP_LEAH" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+			<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He recoils in shock at the sight of your ship. "I never believed in a million years the ship who would be saving the Federation would be a Rebel ves-" He suddenly groans. "Is that Leah's ship? Nono, don't tell me. The Flagship is a more pressing concern. I'm sure I'll regret this, but I promise we'll chat in length when you defeat that Flagship. Good luck."</text>
+                	<choice hidden="true">
+				<text>Continue...</text> 
+				<event load="LAST_STAND_START_2"/>
+			</choice>
+                </event>
+            </mod-append:choice>
+            <mod-append:choice hidden="true" max_group="1" req="LEAH_SHIP_LEAH_ABANDONED" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+			<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He recoils in shock at the sight of your ship. "In all my years, I never thought the Federation's last chance, our saving grace, would fall upon a... Rebel Pleasure Cruiser? How did- why did-" He sighs. "I can't imagine how you stand piloting that... thing. At the very least, it looks like you've made it combat ready enough to face the Flagship. Good luck."</text>
+                	<choice hidden="true">
+				<text>Continue...</text> 
+				<event load="LAST_STAND_START_2"/>
+			</choice>
+                </event>
+            </mod-append:choice>
+            <mod-append:choice hidden="true" max_group="1" req="LEAH_SHIP_LEAH_MEME" blue="false">
+                <text>Contact Federation command.</text>
+                <event>
+			<text>On the vidscreen appears several Federation and Engi officers, as well as Admiral Tully in the center. He recoils in shock at the sight of your ship. "Wha- how- is that even a ship?" He looks around at the nearby officers, who shake their heads in response. He sighs. "At the very least, it looks... combat ready..? ...Well, you've made it all the way here, so I suppose you know what you're doing. Good luck."</text>
+                	<choice hidden="true">
+				<text>Continue...</text> 
+				<event load="LAST_STAND_START_2"/>
+			</choice>
+                </event>
+            </mod-append:choice>
+	</mod:findLike>
+    </mod:findLike>
+</mod:findName>
+
+<event name="UNLOCK_QUEST_LEAH_ACCEPT_TINYBUG">
+	<text>Equipped with the usual space-going fare, along with the not-so-usual fare of a Tiny Bug, she exits the ship and warps away. Before long, some debris teleports onto your ship!</text>
+	<autoReward level="HIGH">unlock_quest_leah_standard</autoReward>
+	<removeCrew class="tinybug">
+		<clone>false</clone>
+		<text></text>
+	</removeCrew>
+        <choice>
+		<text>Continue...</text>
+		<event>
+			<text>You wait for Leah to teleport back.
+			And wait.
+			And wait.
+			And wait.
+			...It looks like she isn't coming back. As much as you'd like to wait for her, the Flagship won't wait for anyone. Resolved, you get ready to jump, when Leah suddenly teleports in front of you!
+
+			"NOOOOOOOOO! THOSE BEYATCHES! THEY KILLED VOULGE!" You wait for her to calm down. It turns out that on her return trip, she'd been teleported right into a Rebel ship! She was able to get away, but 'Voulge' didn't. "Those beyatches! I'll get them for this, I swear it!"</text>
+			<transformRace class="unique_leah">unique_leah_mfk</transformRace>
+			<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMC</unlockCustomShip>
+               		<choice>
+				<text>The Flagship awaits...</text><event></event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="UNLOCK_QUEST_LEAH_ACCEPT">
+	<text>Equipped with the usual space-going fare, she exits the ship and warps away. Before long, some debris teleports onto your ship!</text>
+	<autoReward level="MED">unlock_quest_leah_standard</autoReward>
+	<removeCrew class="unique_leah">
+		<clone>false</clone>
+		<text></text>
+	</removeCrew>
+        <choice>
+		<text>Continue...</text>
+		<event>
+			<text>You wait for Leah to teleport back.
+			And wait.
+			And wait.
+			And wait.
+			...It looks like she isn't coming back. As much as you'd like to wait for her, the Flagship won't wait for anyone. Resolved, you get ready to jump.</text>
+               		<choice>
+				<text>The Flagship awaits...</text><event></event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<mod:findName type="event" name="BOSS_ESCAPED">
+	<mod-append:choice hidden="true" req="unique_leah" max_group="2" lvl="1" blue="false">
+                <text>Leah has something to say.</text>
+		<event load="BOSS_ESCAPED_LEAH"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="unique_leah" max_group="2" lvl="0" blue="false">
+                <text>Continue...</text><event></event>
+	</mod-append:choice>
+</mod:findName>
+
+<event name="BOSS_ESCAPED_LEAH">
+	<text>Leah proposes that she can get some of the debris with her personal teleporter. She assures you it'll be "a quickie!" and that she'll be "right in, right out. ...Wait, wouldn't it be right out, right in?"</text>
+	<choice req="tinybug" blue="true">
+     	        <text>(Tiny Bug) Your Tiny Bug seems to want to go with Leah.</text>
+        	<event load="UNLOCK_QUEST_LEAH_ACCEPT_TINYBUG"/>
+	</choice>
+        <choice>
+		<text>Agree to her plan.</text> 
+       		<event load="UNLOCK_QUEST_LEAH_ACCEPT"/>
+	</choice>
+	<choice>
+		<text>Reject her plan.</text> 
+		<event>
+			<text>Though sullen, she grudgingly accepts your decision.</text>
+		</event>
+	</choice>
+</event>
+
+<mod:findName type="event" name="BOSS_TEXT_1">
+    <mod-append:choice hidden="true" blue="true" req="unique_battery_leah">
+        <text>(Batteries) Talk to the Batteries.</text>
+	<event load="LEAH_BOSS_TEXT_1_BATTERIES"/>
+    </mod-append:choice>
+</mod:findName>
+
+<event name="LEAH_BOSS_TEXT_1_BATTERIES">
+	<text>You brought a pack of batteries all the way to the Flagship. Well, it's not like you had a choice, but still. Why are you even trying to talk to the batteries? It's not like they're sentient, they can't understand or even hear you. In fact, how did these batteries even get onto the cruiser? They were just there in the hangar, and no one knew why or how. Even now, you still have no clue. These batteries aren't like anything you've ever seen before; batteries aren't commonly seen anymore, they're more of an old-Earth concept. You're still talking to these batteries, are you crazy?
+
+	Batteries don't have souls, do they? They aren't sentient. You know this, yet you feel as if words are forming in your mind. "...This is a meta-narrative, get it? Laugh now, it's a meta-narrative because this is shittily made, laugh now because it's a funny joke and is a very deep and incentivising reward to something you had no choice in, unless you somehow lost these batteries in some sort of event. Y'see, this is funny, its a meta joke because its shittily made. Laugh now, way too much effort went into this joke. Also, you only get this for this boss, not any other boss, because cry about it."
+
+	While pondering these words, the batteries seem to glow slightly. You get the feeling you can finally remove them from your cruiser.</text>
+	<choice>
+		<text>Remove them.</text>
+		<event>
+			<text>A cautionary look at the batteries reveal that their radioactivity seems to have subsided. You pick up the batteries and remove them from the cruiser.</text>
+			<removeCrew class="unique_battery_leah">
+				<clone>false</clone>
+				<text></text>
+			</removeCrew>
+			<choice>
+				<text>Continue...</text>
+				<event><loadEvent>BOSS_TEXT_1</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Keep them on the cruiser.</text>
+		<event><loadEvent>BOSS_TEXT_1</loadEvent></event>
+	</choice>
+</event>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+<animSheet name="leah_beam" w="306" h="129" fw="34" fh="129">weapon_beams/leah_beam.png</animSheet>
+<weaponAnim name="leah_beam">
+	<sheet>leah_beam</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="20" y="95"/>
+	<mountPoint x="4" y="113"/>
+	<chargeImage>weapon_beams/leah_beam_glow.png</chargeImage>
+</weaponAnim>
+
+
+
+
+<animSheet name="glitch_paradox_leah" w="5120" h="720" fw="1280" fh="720">effects/glitch_paradox_leah.png</animSheet>
+<anim name="glitch_paradox_leah">
+	<sheet>glitch_paradox_leah</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.05</time>
+</anim>
+
+
+
+
+
+<animSheet name="unique_battery_leah" w="35" h="35" fw="35" fh="35">people/unique_battery_leah_base.png</animSheet>
+<anim name="unique_battery_leah_clone">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="unique_battery_leah_walk_down">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="unique_battery_leah_walk_right">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="unique_battery_leah_walk_up">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="unique_battery_leah_walk_left">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<anim name="unique_battery_leah_portrait">
+	<sheet>unique_battery_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+
+
+
+<animSheet name="unique_thing_leah" w="315" h="455" fw="35" fh="35">people/unique_thing_leah_base.png</animSheet>
+<anim name="unique_thing_leah_clone">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thing_leah_death_right">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="5" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_death_left">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="9" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_walk_down">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_walk_right">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_walk_up">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_walk_left">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_shoot_down">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_shoot_right">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_shoot_up">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_shoot_left">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_fire_down">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_fire_right">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_fire_up">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_fire_left">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_repair">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_punch_up">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_punch_down">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_thing_leah_teleport">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="8" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="unique_thing_leah_type_right">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thing_leah_type_left">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thing_leah_type_up">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thing_leah_type_down">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="unique_thing_leah_portrait">
+	<sheet>unique_thing_leah</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
