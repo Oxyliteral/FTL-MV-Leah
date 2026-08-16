@@ -23,8 +23,14 @@
 			2.4.1 Hi-res Bkgs
 			1.0 for FTL 1.03.1
 	-->
-	<version><![CDATA[3.0 - Second Release, May There Never Be a Third]]></version>
-	<description><![CDATA[v3.0: Hello again. I got into Multiverse again, so I decided to update the mod. I was originally just going to fix the errors, but one thing led to another. The full list of changes:
+	<version><![CDATA[3.1 - Second Release, May There Never Be a Third]]></version>
+	<description><![CDATA[
+v3.1: Changelog:
+-Fixed some issues.
+-Teleporter level 4 crashes the game, so the according ship now has level 3, and has been given +1 crew to compensate.
+-Added new 'final' ship.
+
+v3.0: Hello again. I got into Multiverse again, so I decided to update the mod. I was originally just going to fix the errors, but one thing led to another. The full list of changes:
 -Fixes to events for Multiverse 5.5.1. Some events and some xml had their ids changed, so the events weren't being appended correctly.
 -Cleaned up some leftover files.
 -Added event to encountering Leah if you have Leah. 25% for crew, 25% for weapon, 25% for scrap, 1/8% for 'who is who' event, 1/8 for 'mimic' event.
@@ -32,7 +38,7 @@
 -Added MV version, useable immediately without unlocks, which unlocks the rest of the new ships.
 -Ships from v2.0 have been left untouched.
 
-v2.0 description:
+v2.0:
 Includes the original mod (I am sorry, NewtonsFourth) and a few extras. Namely, Sylvan interactions and a few ships. Don't expect this to be balanced, that's not what this is here for; rather, it is here for BEAM.
 
 To list each unlock condition, there's one for mainly every Leah interaction in the game (see, the joke here is that there aren't actually that many, so I had to make a few new ones), barring whatever I forgot about. That is to say, they are:

@@ -85,12 +85,12 @@
 
 
 <mod:findName type="event" name="BOSS_ESCAPED">
-	<mod-append:choice hidden="true" req="unique_leah" max_group="2" lvl="1" blue="false">
+	<mod-append:choice max_group="2" blue="false">
+                <text>Continue...</text><event></event>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="unique_leah" max_group="2" lvl="1" blue="true">
                 <text>Leah has something to say.</text>
 		<event load="BOSS_ESCAPED_LEAH"/>
-	</mod-append:choice>
-	<mod-append:choice hidden="true" req="unique_leah" max_group="2" lvl="0" blue="false">
-                <text>Continue...</text><event></event>
 	</mod-append:choice>
 </mod:findName>
 

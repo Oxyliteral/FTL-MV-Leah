@@ -1,3 +1,10 @@
+<mod:findName type = "event" name = "NEMESIS_DROPPOINT">
+	<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
+	<text>(Leah) Use Leah to hail the ship.</text>
+	<event load="LEAH_NEMESIS_LEAH"/>
+	</mod-append:choice>
+</mod:findName>
+
 <mod:findName type = "event" name = "NEMESIS_ENCOUNTER">
 	<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
 	<text>(Leah) Use Leah to hail the ship.</text>
@@ -545,6 +552,22 @@ She laughs before warping away. Evidently, your Leah won the fight!</text>
 	<store>STORE_SYLVAN_PACKAGE_LEAH</store>
 </event>
 
+<event name="SYLVAN_PACKAGE_LEAH_CHECK">
+	<text>Upon seeing the Travelling Merchant, Leah pushes you out of the way and hails the ship.</text>
+	<choice req="SEC FINAL" lvl="1" max_group="666" hidden="true" blue="false">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
+		</event>
+	</choice>
+	<choice req="SEC FINAL" lvl="0" max_group="666" hidden="true" blue="false">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+		</event>
+	</choice>
+</event>
+
 <event name="SYLVAN_PACKAGE_LEAH_READY">
 	<text>"Aaaaah. Ssstranger ssstranger, your package isss ready."</text>
 	<unlockCustomShip silent="false">PLAYER_SHIP_NEWTONBEAMB</unlockCustomShip>
@@ -561,37 +584,16 @@ She laughs before warping away. Evidently, your Leah won the fight!</text>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
-	<loadEvent>SYLVAN_STANDARD</loadEvent>
+		<loadEvent>SYLVAN_STANDARD</loadEvent>
 	</event>
 	</choice>
 </event>
-
-
-<mod:findName type = "event" name = "SYLVAN_GIFT_LASTSTAND">
-<mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
-<text>(Leah) Use Leah to hail Sylvan.</text>
-<event>
-	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
-</event>
-</mod-append:choice>
-<mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
-<text>(Kyle's Package) Show Sylvan the package.</text>
-<event>
-	<loadEvent>SYLVAN_PACKAGE_KYLE_OFFER</loadEvent>
-</event>
-</mod-append:choice>
-<mod:findWithChildLike type="choice" child-type="text">
-<mod:selector>Decline his offer.</mod:selector>
-<mod:setAttributes req="pilot" lvl="1" max_group="670" blue="false"/>
-</mod:findWithChildLike>
-</mod:findName>
-
 
 <mod:findName type = "event" name = "SYLVAN_DROPPOINT_GIFT">
 <mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
 <text>(Leah) Use Leah to hail Sylvan.</text>
 <event>
-	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_CHECK</loadEvent>
 </event>
 </mod-append:choice>
 <mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
@@ -611,7 +613,7 @@ She laughs before warping away. Evidently, your Leah won the fight!</text>
 <mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
 <text>(Leah) Use Leah to hail Sylvan.</text>
 <event>
-	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_CHECK</loadEvent>
 </event>
 </mod-append:choice>
 <mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">
@@ -628,16 +630,10 @@ She laughs before warping away. Evidently, your Leah won the fight!</text>
 
 
 <mod:findName type = "event" name = "SYLVAN_STANDARD">
-<mod-append:choice req="LIST_CREW_LEAH" req="SEC FINAL" max_group="666" hidden="true" blue="true">
-<text>(Leah) Use Leah to hail Sylvan.</text>
-<event>
-	<loadEvent>SYLVAN_PACKAGE_LEAH_READY</loadEvent>
-</event>
-</mod-append:choice>
 <mod-append:choice req="LIST_CREW_LEAH" max_group="666" hidden="true" blue="true">
 <text>(Leah) Use Leah to hail Sylvan.</text>
 <event>
-	<loadEvent>SYLVAN_PACKAGE_LEAH_NOTREADY</loadEvent>
+	<loadEvent>SYLVAN_PACKAGE_LEAH_CHECK</loadEvent>
 </event>
 </mod-append:choice>
 <mod-append:choice req="LEAH_KYLE_PACKAGE" max_group="667" hidden="true" blue="true">

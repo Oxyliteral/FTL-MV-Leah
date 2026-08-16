@@ -34,14 +34,14 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 			
 			<mod-append:ship>PLAYER_SHIP_LEAH_MULTIVERSE</mod-append:ship>
 			<mod-append:ship>PLAYER_SHIP_LEAH_CHAOS</mod-append:ship>
-			<mod-append:empty/>
-			<mod-append:empty/>
-			<mod-append:empty/>
-			<mod-append:empty/>
-			<mod-append:empty/>
-			<mod-append:empty/>
 			<mod-append:ship>PLAYER_SHIP_LEAH_PACKAGE</mod-append:ship>
+			<mod-append:empty/>
+			<mod-append:empty/>
+			<mod-append:empty/>
+			<mod-append:empty/>
+			<mod-append:empty/>
 			<mod-append:ship>PLAYER_SHIP_LEAH_ACE</mod-append:ship>
+			<mod-append:ship>PLAYER_SHIP_LEAH_OBELISK</mod-append:ship>
 			
 			<mod-append:ship>PLAYER_SHIP_LEAH_BEAM</mod-append:ship>
 			<mod-append:ship>PLAYER_SHIP_LEAH_DRONE</mod-append:ship>
@@ -58,50 +58,116 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 
 		<mod-append:ship name="PLAYER_SHIP_LEAH_MULTIVERSE" b="true" c="true" >
 			<unlock variant="b" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="c" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE_2</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE_2</shipReq>
 			</unlock>
 		</mod-append:ship>
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_CHAOS" b="false" c="false" >
 			<unlock variant="a" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 		</mod-append:ship>
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_PACKAGE" b="true" c="false" >
 			<unlock variant="a" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_PACKAGE</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_PACKAGE</shipReq>
 			</unlock>
 		</mod-append:ship>
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_ACE" b="true" c="false" >
 			<unlock variant="a" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
-					<type>2</type>
-					<shipReq>PLAYER_SHIP_LEAH_ACE</shipReq>
+				<type>3</type>
+				<otherUnlocks>
+					<ship>PLAYER_SHIP_LEAH_ACE</ship>
+				</otherUnlocks>
+			</unlock>
+		</mod-append:ship>
+		
+		<mod-append:ship name="PLAYER_SHIP_LEAH_OBELISK" b="true" c="true" >
+			<unlock variant="a" silent="false">
+				<type>3</type>
+				<otherUnlocks>
+					<ship>PLAYER_SHIP_LEAH_BEAM_3</ship>
+					<ship>PLAYER_SHIP_LEAH_DRONE_3</ship>
+					<ship>PLAYER_SHIP_LEAH_ASB_3</ship>
+					<ship>PLAYER_SHIP_LEAH_ION_3</ship>
+					<ship>PLAYER_SHIP_LEAH_SPIDER_3</ship>
+					<ship>PLAYER_SHIP_LEAH_HACKING_3</ship>
+					<ship>PLAYER_SHIP_LEAH_BALLISTICS_3</ship>
+					<ship>PLAYER_SHIP_LEAH_MIND_3</ship>
+				</otherUnlocks>
+        	</unlock>
+			<unlock variant="b" silent="false">
+				<type>5</type>
+				<victories>
+					<victory type="nexus">PLAYER_SHIP_LEAH_OBELISK</victory>
+				</victories>
+			</unlock>
+			<unlock variant="b" silent="false">
+				<type>5</type>
+				<victories>
+					<victory type="nexus">PLAYER_SHIP_LEAH_OBELISK_3</victory>
+				</victories>
+			</unlock>
+			<unlock variant="b" silent="false">
+				<type>5</type>
+				<victories>
+					<victory>PLAYER_SHIP_LEAH_BEAM_3</victory>
+					<victory>PLAYER_SHIP_LEAH_DRONE_3</victory>
+					<victory>PLAYER_SHIP_LEAH_ASB_3</victory>
+					<victory>PLAYER_SHIP_LEAH_ION_3</victory>
+					<victory>PLAYER_SHIP_LEAH_SPIDER_3</victory>
+					<victory>PLAYER_SHIP_LEAH_HACKING_3</victory>
+					<victory>PLAYER_SHIP_LEAH_BALLISTICS_3</victory>
+					<victory>PLAYER_SHIP_LEAH_MIND_3</victory>
+				</victories>
+			</unlock>
+			<unlock variant="c" silent="false">
+				<type>5</type>
+				<victories>
+					<victory type="true">PLAYER_SHIP_LEAH_OBELISK</victory>
+				</victories>
+			</unlock>
+			<unlock variant="c" silent="false">
+				<type>5</type>
+				<victories>
+					<victory type="true">PLAYER_SHIP_LEAH_OBELISK_2</victory>
+				</victories>
+			</unlock>
+			<unlock variant="c" silent="false">
+				<type>5</type>
+				<victories>
+					<victory>PLAYER_SHIP_LEAH_BEAM_3</victory>
+					<victory>PLAYER_SHIP_LEAH_DRONE_3</victory>
+					<victory>PLAYER_SHIP_LEAH_ASB_3</victory>
+					<victory>PLAYER_SHIP_LEAH_ION_3</victory>
+					<victory>PLAYER_SHIP_LEAH_SPIDER_3</victory>
+					<victory>PLAYER_SHIP_LEAH_HACKING_3</victory>
+					<victory>PLAYER_SHIP_LEAH_BALLISTICS_3</victory>
+					<victory>PLAYER_SHIP_LEAH_MIND_3</victory>
+				</victories>
 			</unlock>
 		</mod-append:ship>
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_BEAM" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -118,10 +184,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_DRONE" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -138,10 +202,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_ASB" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -158,10 +220,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_ION" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -178,10 +238,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_SPIDER" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -198,10 +256,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_HACKING" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -218,10 +274,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_BALLISTICS" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -238,10 +292,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_MIND" b="true" c="true" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -258,10 +310,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_ASPHYXIATION" b="true" c="false" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -273,10 +323,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		
 		<mod-append:ship name="PLAYER_SHIP_LEAH_DRAMA" b="true" c="false" >
 			<unlock variant="a" silent="false">
-				<type>3</type>
-				<otherUnlocks>
-					<ship>PLAYER_SHIP_NEWTONBEAMA_2</ship>
-				</otherUnlocks>
+				<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE</shipReq>
 			</unlock>
 			<unlock variant="b" silent="false">
 				<type>3</type>
@@ -293,6 +341,10 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
         	</unlock>
 		<unlock variant="c" silent="false">
            		<type>4</type>
+		</unlock>
+		<unlock variant="c" silent="false">
+           		<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_MULTIVERSE_3</shipReq>
 		</unlock>
 		</mod-append:ship>
 
@@ -353,6 +405,10 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		<unlock variant="a" silent="false">
             		<type>4</type>
         	</unlock>
+		<unlock variant="a" silent="false">
+           		<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_PACKAGE_2</shipReq>
+		</unlock>
 		<unlock variant="b" silent="false">
             		<type>2</type>
             		<shipReq>PLAYER_SHIP_NEWTONBEAME</shipReq>
@@ -369,6 +425,10 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 		<unlock variant="a" silent="false">
             		<type>4</type>
         	</unlock>
+		<unlock variant="a" silent="false">
+           		<type>2</type>
+				<shipReq>PLAYER_SHIP_LEAH_ACE_2</shipReq>
+		</unlock>
 		<unlock variant="b" silent="false">
             		<type>3</type>
 			<otherUnlocks>
@@ -424,7 +484,7 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 			</crew>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_LEAH_MULTIVERSE_3">
-			<crewLimit>8</crewLimit>
+			<crewLimit>10</crewLimit>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
 			<crew>
@@ -464,8 +524,8 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
 			<crew>
 				<unique_leah room="10" name="Leah" />
-				<human_medic room="6" name="Walter" />
-				<human_engineer room="6" name="Jesse" />
+				<human_medic room="5" name="Walter" />
+				<human_engineer room="2" name="Jesse" />
 			</crew>
 		</mod-append:customShip>
 		
@@ -491,6 +551,120 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 				<human_soldier room="19" />
 			</crew>
 		</mod-append:customShip>
+		
+		<mod-append:customShip name="PLAYER_SHIP_LEAH_OBELISK">
+			<crewLimit>16</crewLimit>
+			<systemLimit>12</systemLimit>
+			<augSlots>9</augSlots>
+			<cargoSlots>12</cargoSlots>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="11" name="Leah" />
+				<unique_turzil room="10" name="Turzil" />
+				<unique_anurak room="1" name="Anurak" />
+				<unique_mayeb room="5" name="Mayeb" />
+			</crew>
+			<customReactor maxLevel="40">
+				<overrideCost coloumn="3">20</overrideCost>
+				<overrideCost coloumn="4">30</overrideCost>
+				<overrideCost coloumn="5">40</overrideCost>
+				<overrideCost coloumn="6">40</overrideCost>
+				<overrideCost coloumn="7">40</overrideCost>
+				<overrideCost coloumn="8">40</overrideCost>
+			</customReactor>
+			<rooms>
+				<room id="5">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+				<room id="1">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+				<room id="10">
+					<roomAnim renderLayer="0">resist_1x3</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+			</rooms>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_LEAH_OBELISK_2">
+			<crewLimit>24</crewLimit>
+			<systemLimit>16</systemLimit>
+			<augSlots>9</augSlots>
+			<cargoSlots>12</cargoSlots>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="1" name="Leah" />
+				<sylvanleah room="12" name="Syleah" />
+				<unique_obyn room="10" name="Obyn" />
+				<unique_billy room="11" name="Billy" />
+				<unique_anurak room="13" name="Anurak" />
+				<beans room="1" name="beans" />
+				
+				
+			</crew>
+			<customReactor maxLevel="50">
+				<overrideCost coloumn="3">20</overrideCost>
+				<overrideCost coloumn="4">30</overrideCost>
+				<overrideCost coloumn="5">40</overrideCost>
+				<overrideCost coloumn="6">40</overrideCost>
+				<overrideCost coloumn="7">40</overrideCost>
+				<overrideCost coloumn="8">40</overrideCost>
+				<overrideCost coloumn="9">40</overrideCost>
+				<overrideCost coloumn="10">40</overrideCost>
+			</customReactor>
+			<rooms>
+				<room id="10">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+				<room id="14">
+					<roomAnim renderLayer="0">resist_2x2</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+			</rooms>
+		</mod-append:customShip>
+		<mod-append:customShip name="PLAYER_SHIP_LEAH_OBELISK_3">
+			<crewLimit>24</crewLimit>
+			<systemLimit>16</systemLimit>
+			<augSlots>9</augSlots>
+			<cargoSlots>12</cargoSlots>
+			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
+			<crew>
+				<unique_leah_mfk room="3" name="Leah" />
+				<unique_obyn room="12" name="Obyn" />
+				<unique_jerry room="9" name="Jerry" />
+				<pony_tamed room="9" />
+				<unique_anointed room="18" name="The Anointed" />
+				<unique_wither room="7" name="Aenwithe" />
+			</crew>
+			<customReactor maxLevel="50">
+				<overrideCost coloumn="3">20</overrideCost>
+				<overrideCost coloumn="4">30</overrideCost>
+				<overrideCost coloumn="5">40</overrideCost>
+				<overrideCost coloumn="6">40</overrideCost>
+				<overrideCost coloumn="7">40</overrideCost>
+				<overrideCost coloumn="8">40</overrideCost>
+				<overrideCost coloumn="9">40</overrideCost>
+				<overrideCost coloumn="10">40</overrideCost>
+			</customReactor>
+			<rooms>
+				<room id="12">
+					<roomAnim renderLayer="0">resist_3x1</roomAnim>
+					<roomAnim renderLayer="3">resist_icon</roomAnim>
+					<sysDamageResistChance>100</sysDamageResistChance>
+				</room>
+			</rooms>
+		</mod-append:customShip>
+		
 		
 		<mod-append:customShip name="PLAYER_SHIP_LEAH_BEAM">
 			<crewLimit>8</crewLimit>
@@ -686,7 +860,7 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 			</crew>
 		</mod-append:customShip>
 		<mod-append:customShip name="PLAYER_SHIP_LEAH_SPIDER_3">
-			<crewLimit>8</crewLimit>
+			<crewLimit>12</crewLimit>
 			<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 			<hiddenAug>LEAH_SHIP_LEAH</hiddenAug>
 			<crew>
@@ -1033,6 +1207,7 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 				<!--tp-->
 				<shell_radiant room="4" />
 				<!--tp-->
+				<shell_radiant room="8" />
 			</crew>
 			<customReactor maxLevel="18">
 				<baseCost>18</baseCost>
@@ -1303,18 +1478,18 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
 	    <category type="WEAPONS">
 	    <customTitle>THE BIG ONES</customTitle>
             <item>
-                <blueprint>PACKAGE_LEAH_THE_BIG_ONE</blueprint>
+                <blueprint>PACKAGE_LEAH_THE_BIG_ONE_ELITE</blueprint>
                 <modifier min="0.8" max="0.8" flat="false"/>
                 <price>-1</price>
             </item>    
             <item>
-                <blueprint>BEAM_4</blueprint>
-                <modifier min="0.8" max="1.1" flat="false"/>
+                <blueprint>PACKAGE_LEAH_THE_BIG_ONE</blueprint>
+                <modifier min="0.7" max="0.7" flat="false"/>
                 <price>-1</price>
             </item>    
             <item>
-                <blueprint>BEAM_3</blueprint>
-                <modifier min="0.8" max="1.1" flat="false"/>
+                <blueprint>PACKAGE_LEAH_THE_BIG_ONE_OLD</blueprint>
+                <modifier min="0.5" max="0.5" flat="false"/>
                 <price>-1</price>
             </item>    
             </category>
