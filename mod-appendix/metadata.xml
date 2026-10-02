@@ -23,9 +23,12 @@
 			2.4.1 Hi-res Bkgs
 			1.0 for FTL 1.03.1
 	-->
-	<version><![CDATA[3.1 - Second Release, May There Never Be a Third]]></version>
+	<version><![CDATA[3.2 - Second Release, May There Never Be a Third]]></version>
 	<description><![CDATA[
-v3.1: Changelog:
+v3.2:
+Meta content added to Leah in the droppoint. Meet her in every sector, and she'll lead you to a Beam dealer.
+
+v3.1:
 -Fixed some issues.
 -Teleporter level 4 crashes the game, so the according ship now has level 3, and has been given +1 crew to compensate.
 -Added new 'final' ship.
