@@ -1,3 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FTL>
+<blueprintList name="LEAH_LIST_BEAMS_SMALL">
+	<name>BEAM_PARTICLE</name>
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BEAM_LONG_PLAYER</name>
+	<name>BEAM_LONG_2</name>
+	<name>BEAM_LONG_2_PLAYER</name>
+	<name>BEAM_SCYTHE</name>
+	<name>BEAM_PIERCE</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_FIRE_PIERCE</name>
+	<name>BEAM_BREACH</name>
+	<name>BEAM_HULL</name>
+	<name>BEAM_REPAIR</name>
+	<name>BEAM_ADAPT</name>
+	<name>BEAM_BIO</name>
+	<name>BEAM_BIO_CHAIN</name>
+	<name>BEAM_STUN</name>
+	<name>BEAM_CONSERVATIVE</name>
+	<name>BEAM_BIO_CONSERVATIVE</name>
+	<name>BEAM_BATTERY</name>
+	<name>BEAM_BATTERY_CHAOS</name>
+	<name>BEAM_QUICK</name>
+	<name>BEAM_QUICK_CHAOS</name>
+	<name>ION_INSTANT</name>
+	<name>FOCUS_1</name>
+	<name>FOCUS_2</name>
+	<name>FOCUS_BIO</name>
+</blueprintList>
+<blueprintList name="LEAH_LIST_BEAMS_MEDIUM">
+	<name>BEAM_2</name>
+	<name>BEAM_2_PLAYER</name>
+	<name>BEAM_CHAIN</name>
+	<name>BEAM_MINING</name>
+	<name>BEAM_GUILLOTINE</name>
+	<name>BEAM_GUILLOTINE_PLAYER</name>
+	<name>LANCE_1</name>
+	<name>BEAM_SHELL</name>
+	<name>MODULAR_BEAM_BASE</name>
+	<name>MODULAR_BEAM_BASE_BIO</name>
+	<name>MODULAR_BEAM_BASE_COOLDOWN</name>
+	<name>MODULAR_BEAM_BASE_PIERCE</name>
+	<name>MODULAR_BEAM_BASE_STUN</name>
+	<name>MODULAR_BEAM_FIRE</name>
+	<name>MODULAR_BEAM_FIRE_BIO</name>
+	<name>MODULAR_BEAM_FIRE_COOLDOWN</name>
+	<name>MODULAR_BEAM_FIRE_PIERCE</name>
+	<name>MODULAR_BEAM_FIRE_STUN</name>
+	<name>MODULAR_BEAM_HULL</name>
+	<name>MODULAR_BEAM_HULL_BIO</name>
+	<name>MODULAR_BEAM_HULL_COOLDOWN</name>
+	<name>MODULAR_BEAM_HULL_PIERCE</name>
+	<name>MODULAR_BEAM_HULL_STUN</name>
+	<name>MODULAR_BEAM_POWER</name>
+	<name>MODULAR_BEAM_POWER_BIO</name>
+	<name>MODULAR_BEAM_POWER_COOLDOWN</name>
+	<name>MODULAR_BEAM_POWER_PIERCE</name>
+	<name>MODULAR_BEAM_POWER_STUN</name>
+	<name>FOCUS_3</name>
+	<name>FOCUS_CHAIN</name>
+	<name>FOCUS_BIO</name>
+	<name>LOOT_UNION_2</name>
+	<name>LOOT_MATH_5</name>
+	<name>SNIPER_CHAOS</name>
+</blueprintList>
+<blueprintList name="LEAH_LIST_BEAMS_BIG">
+	<name>BEAM_3</name>
+	<name>BEAM_4</name>
+	<name>BEAM_4_SYLVAN</name>
+	<name>BEAM_LONG_2</name>
+	<name>BEAM_LONG_2_PLAYER</name>
+	<name>BEAM_HULL_2</name>
+	<name>BEAM_ADAPT_2</name>
+	<name>ANCIENT_BEAM</name>
+	<name>ANCIENT_BEAM_2</name>
+	<name>ANCIENT_BEAM_3</name>
+	<name>ANCIENT_HAVOC</name>
+	<name>ROYAL_BEAM_3</name>
+	<name>ROYAL_HAVOC</name>
+	<name>BEAM_HARDSCIFI</name>
+	<name>ZOLTAN_DELETER</name>
+	<name>LOOT_ZOLTAN_1</name>
+	<name>LOOT_SLUG_1</name>
+	<name>LOOT_DYNASTY_1</name>
+	<name>LOOT_SHELL_2</name>
+	<name>LOOT_CULTIST_1</name>
+	<name>LOOT_KNIGHT_1</name>
+	<name>LOOT_MATH_4</name>
+	<name>BEAM_ADAPT_3</name>
+	<name>BEAM_ADAPT_3_CHAOS</name>
+	<name>GASTER_BLASTER</name>
+	<name>GASTER_BLASTER_CHAOS</name>
+	<name>BEAM_HACK</name>
+	<name>BEAM_HACK_CHAOS</name>
+	<name>ANCIENT_FOCUS</name>
+	<name>ANCIENT_FOCUS_2</name>
+	<name>ROYAL_FOCUS</name>
+	<name>ARBITER</name>
+</blueprintList>
+
 <blueprintList name="LIST_CREW_LEAH">
 	<name>unique_leah</name>
 	<name>unique_leah_mfk</name>
@@ -93,3 +195,5 @@
 	<aug name="LEAH_VENGEANCE" />
 
 </shipBlueprint>
+
+</FTL>

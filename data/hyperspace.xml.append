@@ -8,6 +8,12 @@
 		<mod-append:script>data/scripts/weapons.lua</mod-append:script>
 		<mod-append:script>data/scripts/augments.lua</mod-append:script>
 	</mod:findLike>
+	
+	<events>
+		<variable name="leah_nemesis_leah_quest_relay" op="set" val="0"/>
+		
+		<metaVariable name="leah_prof_nemesis_leah_quest_completed" op="set" val="0"/>
+	</events>
 
 <!--------------------------------SHIPS----------------------------------->
 	<mod:findLike type="ships">
@@ -1608,6 +1614,251 @@ Every time you deal hull damage to this enemy with your weapons, a shield-pierci
             </item>    
             </category>
 	</customStore>
+	<customStore id="LEAH_STORE_NEMESIS_LEAH_QUEST_FINAL">
+	    <category type="WEAPONS">
+	    <customTitle>THE BIG ONES</customTitle>
+            <item>
+                <blueprint>PACKAGE_LEAH_THE_BIG_ONE</blueprint>
+                <modifier min="0.7" max="0.7" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>BEAM_4</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>BEAM_3</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>ANCIENT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_ANCIENT_BEAM</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>LONG BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_HULL_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_LONG_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_SCYTHE</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>CHAIN BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_ADAPT_2</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_ADAPT</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>BEAM_CHAIN</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>PINPOINT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>FOCUS_3</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>BIO BEAMS</customTitle>
+            <item>
+                <blueprint>BEAM_GUILLOTINE_PLAYER</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_BIO</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_BIO</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+
+	    <category type="WEAPONS">
+	    <customTitle>UTILITY BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            </category>
+	</customStore>
+	<customStore id="LEAH_STORE_NEMESIS_LEAH_QUEST">
+        <itemPurchaseLimit>1</itemPurchaseLimit>
+		<category type="WEAPONS">
+			<customTitle>STRONG BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STRONG</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STRONG</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STRONG</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="WEAPONS">
+			<customTitle>STANDARD BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="WEAPONS">
+			<customTitle>STANDARD BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="WEAPONS">
+			<customTitle>UTILITY BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_BEAM_UTILITY</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>
+        </category>
+		<category type="WEAPONS">
+			<customTitle>PINPOINT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_STANDARD</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="WEAPONS">
+			<customTitle>PINPOINT BEAMS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>SHOP_ITEM_SYLVAN_FOCUS_SPECIAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+    </customStore>
 </store>
 
 

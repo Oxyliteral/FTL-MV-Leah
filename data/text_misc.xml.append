@@ -1,5 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <FTL>
-
-<text name="tip_leah_beam">Tip: This weapon will wreak havoc on an enemy ship, but has a long cooldown. The use of defensive systems like Cloaking is recommended.</text>
-
+	<text name="leah_nemesis_droppoint">YOUR NEMESIS</text>
+	<text name="leah_nemesis_relay">YOUR NEMESIS</text>
+	<text name="leah_nemesis_relay_final">YOUR NEMESIS</text>
+	<text name="tip_leah_beam">Tip: This weapon will wreak havoc on an enemy ship, but has a long cooldown. The use of defensive systems like Cloaking is recommended.</text>
 </FTL>
